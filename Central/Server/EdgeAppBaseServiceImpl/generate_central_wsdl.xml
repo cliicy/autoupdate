@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CentralApps" default="build" basedir=".">
+
+	<property name="dir.externalLib" value="..\..\..\ExternalLib" />
+	<property name="dir.output" value="${basedir}" />
+	<property name="dir.d2d" value="..\..\..\D2D\Server" />
+	<property name="dir.central" value="..\..\Server" />
+	
+	<property name="aspectj" value="${dir.externalLib}/aspectj/lib/aspectjrt.jar"/>
+	<property name="quartz" value="${dir.externalLib}/quartz/quartz-2.2.1.jar"/>
+	<property name="asbujar" value="${dir.externalLib}/asbu-contract.jar"/>
+	<property name="servlet" value="${dir.externalLib}/Tomcat/apache-tomcat/lib/servlet-api.jar"/>
+	<property name="afjob" value="${dir.d2d}/VCM/AFJob/bin"/>
+	<property name="instantvm" value="${dir.d2d}/InstantVM/bin"/>
+	<property name="afjobscript" value="${dir.d2d}/VCM/AFJobScript/bin"/>
+	<property name="common" value="${dir.d2d}/Common/bin"/>
+	<property name="contract" value="${dir.d2d}/WebServiceContract/bin"/>
+	<property name="serviceimpl" value="${dir.d2d}/WebService/bin"/>
+	<property name="vmwaremanager" value="${dir.d2d}/VMwareManager/bin"/>
+	<property name="rpscontract" value="${dir.d2d}/RPSServiceContract/bin"/>
+	<property name="rpsserviceimpl" value="${dir.d2d}/RPSServiceImpl/bin"/>
+	<property name="edgecontraqct" value="${dir.central}/EdgeAppBaseContract/bin"/>
+	<property name="edgeserviceimpl" value="${dir.central}/EdgeAppBaseServiceImpl/bin"/>
+	<property name="edgedllloader" value="${dir.central}/EdgebaseDllLoader/bin"/>
+	<property name="itmgmtintegration" value="${dir.central}/EdgeIntegration/bin"/>
+	<property name="reportcontract" value="${dir.central}/EdgeAppReportContract/bin" />
+	<property name="reportservice" value="${dir.central}/EdgeAppReportServiceImpl/bin" />
+	<property name="edgecmui" value="${dir.central}/EdgeAppCMUI/war/WEB-INF/classes" />
+	<property name="edgecommon" value="${dir.central}/EdgeCommon/bin"/>
+	
+	<property name="central.serviceimpl.class" value="com.ca.arcserve.edge.app.cm.webservice.WebServiceImpl"/>
+	<property name="central.service.name" value="{http://webservice.edge.arcserve.ca.com/}EdgeServiceImpl"/>
+	<property name="central.port.name" value="{http://webservice.edge.arcserve.ca.com/}EdgeServiceImplHttpSoap11Endpoint"/>
+
+	<property name="wsgen.d2d.classpath" value="${aspectj};${quartz};${servlet};${afjob};${afjobscript};${common};${contract};${serviceimpl};${vmwaremanager};${asbujar} "/>
+	<property name="wsgen.asbu.classpath" value="${asbujar} "/>
+	<property name="wsgen.rps.classpath" value="${wsgen.d2d.classpath};${rpscontract};${rpsserviceimpl}"/>
+	<property name="wsgen.report.classpath" value="${reportcontract};${reportservice}" />
+	<property name="wsgen.central.classpath" value="${wsgen.asbu.classpath};${edgecmui};${wsgen.report.classpath};${instantvm};${wsgen.rps.classpath};${edgecontraqct};${edgeserviceimpl};${edgedllloader};${itmgmtintegration};${edgecommon}"/>
+	<target name="build" depends="generate_central_wsdl,deploy_wsdl,clean"/>
+
+	<path id="wsgen.main.classpath">
+		<pathelement location="${dir.externalLib}/jaxws/lib/jaxws-tools.jar"/>
+		<pathelement location="${dir.externalLib}/jaxws/lib/jaxb-xjc.jar"/>
+	</path>
+
+	<target name="generate_central_wsdl">
+		<mkdir dir="${dir.output}\wsdl"/>
+		<java classname="com.sun.tools.ws.WsGen">
+         <arg value="-d"/>
+		 <arg value="${dir.output}\wsdl"/>
+		 <arg value="-r"/>
+		 <arg value="${dir.output}\wsdl"/>
+		 <arg value="-cp"/>
+		 <arg value="${wsgen.central.classpath}"/>
+		 <arg value="${central.serviceimpl.class}"/>
+		 <arg value="-wsdl"/>
+		 <arg value="-inlineSchemas"/>
+		 <arg value="-servicename"/>
+		 <arg value="${central.service.name}"/>
+		 <arg value="-portname"/>
+		 <arg value="${central.port.name}"/>
+         <classpath refid="wsgen.main.classpath"/>
+		</java>
+	</target>
+	
+	<target name="deploy_wsdl">
+		<copy file="${dir.output}\wsdl\EdgeServiceImpl.wsdl"
+			todir="..\..\..\D2D\Server\WebServiceContract\src\com\ca\arcflash\webservice\toedge"/>
+	</target>
+	
+	<target name="clean">
+		<delete dir="${dir.output}\wsdl" deleteonexit="true"/>
+	</target>
+</project>

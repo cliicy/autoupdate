@@ -1,0 +1,18 @@
+9.0
+16
+1       SQLINT        0       4       ""   1     ID                             ""
+2       SQLINT        0       4       ""   2     NodeID                         ""
+3       SQLBIGINT     0       8       ""   3     Capacity                       ""
+4       SQLINT        0       4       ""   4     DataWidth                      ""
+5       SQLNCHAR      2       1024    ""   5     DeviceLocator                  SQL_Latin1_General_CP1_CI_AS
+6       SQLINT        0       4       ""   6     FormFactor                     ""
+7       SQLNCHAR      2       1024    ""   7     Manufacturer                   SQL_Latin1_General_CP1_CI_AS
+8       SQLINT        0       4       ""   8     MemoryType                     ""
+9       SQLINT        0       4       ""   9     Speed                          ""
+10      SQLNCHAR      2       1024    ""   10    Tag                            SQL_Latin1_General_CP1_CI_AS
+11      SQLINT        0       4       ""   11    TotalWidth                     ""
+12      SQLINT        0       4       ""   12    TypeDetail                     ""
+13      SQLNCHAR      2       1024    ""   13    Name                           SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR      2       4096    ""   14    RawData                        SQL_Latin1_General_CP1_CI_AS
+15      SQLDATETIME   0       8       ""   15    LastUpdate                     ""
+16      SQLINT        0       4       ""   16    branchid                       ""

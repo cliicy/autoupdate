@@ -1,0 +1,747 @@
+/* Activity Log section */
+.activityLogPanel {
+	width: 800px;
+}
+
+.activityLogWindow {
+	width: 900px;
+}
+/* Activity Log section end */
+
+
+/* SchedulePanel section */
+.scheduleRepeatFieldSet {
+	height: 65px;
+}
+
+/* SchedulePanel section end */
+
+/* Dashboard section */
+.emailDialogHint {
+	color: #615f5f;
+	padding: 1 0 2 0px;	
+}
+/* Dashboard section end */
+
+.warningText{
+	color: red;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.x-tree3-node-text img {
+	vertical-align: bottom;
+}
+
+.details-view-title {
+	font-family: arial, verdana, tahoma, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #333333;
+}
+
+.details-view-section-header {
+	font-family: arial, verdana, tahoma, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #5F79A4;
+	white-space: nowrap;
+}
+
+.plan-summary-task-header {
+	font-family: arial, helvetica, verdana, sans-serif; 
+	font-size: 14px;
+	font-weight:bold; 
+}
+
+.plan-summary-section-header {
+	font-family: arial, helvetica, verdana, sans-serif; 
+	font-size: 15px;
+	font-weight:normal; 
+	color: #001166;
+}
+
+.plan-summary-description-header {
+	font-family: arial, helvetica, verdana, sans-serif; 
+	font-size: 12px;
+	font-weight:bold; 
+	padding-left:9px;
+}
+
+.plan-summary-common-header {
+	font-family: arial, helvetica, verdana, sans-serif;
+	font-size: 11pt;
+	padding-left: 20px;
+}
+
+.property-table .property-name {
+	font-family: arial, helvetica, verdana, sans-serif; 
+	font-size: 12px;
+	color:#333333;
+}
+
+.property-table .property-value {
+	font-family: arial, helvetica, verdana, sans-serif; 
+	font-size: 12px;
+	color:#333333;
+	white-space: wrap;
+}
+
+.property-value li {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.wizardWindowTitlePanel {
+	padding: 8px;
+	background-color: #015B97;
+}
+
+.wizardWindowTitle{
+	font-size: 11pt;
+	font-weight: bold;
+	color: #FF8040;
+}
+
+.wizardWindowDescription{
+	font-size: 9pt;
+	padding-top: 2px;
+	color: white;
+}
+
+.timezone {
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+}
+
+.separator {
+	border-left:solid #000000 1px;
+	font-size:11px;
+}
+
+.NewUpdates_Description{
+	cursor: pointer;
+}
+
+hr {
+	color: #F0F8FF;
+}
+
+legend{
+	font-family: arial, verdana, tahoma, helvetica, sans-serif;
+	font-size: 12px !important
+}
+
+.VMStatus_table {
+	padding: 0px 0px 0px 0px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-top-color: #d2dcdb;
+	border-top-color: #666;
+	border-left-color: #666;
+}
+
+.VMStatus_header_td_left {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-top-color: #CCC;
+	font-weight: bold;
+	color: #000;
+	background-color: #CCC;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	border-left-color: #CCC;
+}
+
+.VMStatus_header_td_right{
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #CCC;
+	border-bottom-color: #666;
+	border-top-color: #CCC;
+	font-weight: bold;
+	color: #000;
+	background-color: #CCC;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	border-left-color: #CCC;
+}
+
+.VMStatus_table_td_left {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-top-color: #CCC;
+	color: #000;
+	background-color: #FFF;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	border-left-color: #CCC;
+}
+
+.VMStatus_table_td_right {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #CCC;
+	border-bottom-color: #666;
+	border-top-color: #CCC;
+	color: #000;
+	background-color: #FFF;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	border-left-color: #FFF;
+}
+.VMStatus_Link A:link {color: #196eaf;}
+.VMStatus_Link A:visited {color: #196eaf;}
+
+.x-grid-group-hd .x-grid-group-div  {
+	font-weight:normal;
+	font-size:12px;
+}
+.x-grid-group-hd .x-grid-group-div  span  {
+	color:#909090;
+	margin-right:5px; 
+	margin-left:5px;
+}
+.x-grid-group-hd .x-grid-group-div  b  {
+	margin-right:5px; 
+	margin-left:5px;
+}
+
+#x-deploy-nodeview-defaultsetting-msg {
+	font-size:15px;
+	float:left;
+	padding-right:5px;
+	font-weight:500;
+}
+#x-deploy-nodeview-defaultsetting {
+	float:left;
+	font-size:15px; 
+	font-weight:600; 
+	text-decoration:underline;
+	color:#3333CC;
+}
+div.install-setting-tip-bold {
+	font-size:15px;
+	font-weight:bold;
+}
+label.deploy-setting-label{
+	padding-top:5px;
+	font-size:13px;
+}
+div.deploy-setting-text{
+	font-size:12px;
+	color:#5B5B5B;
+	padding-top:5px;
+}
+
+.navigationContainer-heading {
+	font-size: 20pt;
+	font-weight: bold;
+	color: #006699;
+	margin-top: 8px;
+	margin-left: 16px;
+}
+
+.navigationContainer-navigation {
+	cursor: pointer;
+	cursor: hand;
+	font-size: 12pt;
+	color: #C0C0C0;
+	margin-left: 16px;
+	margin-bottom: 6px;
+}
+
+.navigationContainer-separator {
+	height: 1px;
+	background: #CACACA;
+}
+
+.x-tree3-node-text-highlight {
+	font: bold 12px Arial, helvectica, Verdana, sans-serif;
+	color: #000000;
+}
+
+.nodeGroupSummary {
+	background: white;
+	border-bottom: 1px solid #cfd5dc;
+}
+
+.nodeGroupSummary-label {
+	font: 18px Arial, helvectica, Verdana, sans-serif;
+	color: #001166;
+	margin: 10px 10px 10px 10px;
+}
+
+.nodeGroupSummary-name {
+	font: 18px Arial, helvectica, Verdana, sans-serif;
+	color: #001166;
+	margin: 10px 0px 10px 0px;
+}
+
+.selectedItemSummaryContainer {
+	
+}
+
+.selectedItemSummaryContainer-group {
+	color: #666666;
+	white-space: nowrap;
+}
+
+.selectedItemSummaryContainer-item {
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.selectedItemSummaryContainer-actions {
+	margin: 6px 0px;
+}
+
+.selectedItemSummaryContainer-status {
+	color: #666666;
+	white-space: nowrap;
+}
+
+.selectedItemSummaryContainer-viewDetail {
+	cursor: pointer;
+	cursor: hand;
+	color: #0000ff;
+	white-space: nowrap;
+}
+
+.selectedItemSummaryContainer-viewDetailWrap {
+	cursor: pointer;
+	cursor: hand;
+	color: #0000ff;
+}
+
+.wizard-header-heading {
+	font: 18px Arial, helvectica, Verdana, sans-serif;
+	color: #001166;
+}
+
+.wizard-header-navigation {
+	font: 12px Arial, helvectica, Verdana, sans-serif;
+	color: #C0C0C0;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.wizard-step-maincontainer{
+	background-color: #CCDDEE;
+	cursor: pointer;
+}
+
+
+.wizard-step-titlecontainer{
+	width: 180px;
+}
+
+.wizard-step-title{
+	font: 13px Arial,Helvetica,Verdana,sans-serif;
+}
+
+.wizard-step-describe{
+	font: 11pt Arial,Helvetica,Verdana,sans-serif;
+}
+
+.wizard-step-create-maincontainer {
+	border: 2px solid #0066AA;
+}
+
+.wizard-step-create-button {
+	background-color: #0066AA;
+	width: 40px;
+	height: 60px;
+}
+
+.wizard-step-notselected {
+	color: #173155;
+}
+
+.wizard-step-notselected:hover {
+	color: #0066AA;
+	background-color: #ECF5F7;
+}
+
+.wizard-step-selected {
+	color: #FFFFFF;
+	background-color: #38304c !important;
+}
+
+div.datastore-chartwrapper {
+	position: relative;
+    padding: 2px 0px 2px 0px;
+}
+/* to use in chrome ; must set "white-space: normal";! by default gxt grid view set table attribute white-space: nowrap; 
+ chrome use it in image not only text; so our image width may show error width!
+	margin:0px;   */
+table.datastore-chart {
+	width:170px; 
+	border:0px; 
+	border-collapse: collapse; 
+	border-spacing: 0px;
+	white-space: normal; 
+	height: 20px     
+}
+div.datastore-chart_overlap {
+	position:absolute; 
+	top:5px; 
+	left: 10px; 
+	font-size:10px !important;
+	line-height: 14px;
+	background-color:transparent;
+	color: #F8F8F8;
+	font-weight:bold;
+}
+
+.udpListView {
+	background-color: #F6F6F6;
+}
+
+.udpListView .x-view-item {
+	border: 1px solid #F6F6F6;
+	font-family: Arial, helvetica,  Verdana,sans-serif;
+	font-size: 12px;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	overflow: hidden;
+	padding: 2px;
+	white-space: nowrap;
+}
+
+.udpListView .x-view {
+	-moz-user-focus: normal;
+	background-color: #F6F6F6;
+	cursor: default;
+	outline: 0 none;
+	overflow: auto;
+	padding: 0;
+}
+
+.udpListView .x-view-item-sel {
+	background: none repeat scroll 0 center #BEDDEE;
+	border: 1px dotted #C0C0C0 !important;
+	cursor: pointer;
+}
+.udpListView .x-view-item-over {
+	background: #D6E5ED none repeat-x left top;
+	border: 1px dotted #dddddd !important;
+	cursor: pointer;
+}
+
+
+
+.action-sidebar {
+	padding: 10px;
+}
+
+.action-sidebar .seperator {
+	background: #eeeeee;
+	margin: 3px 0px;
+}
+
+.action-sidebar .action-item {
+	padding: 4px 8px;
+	cursor: hand;
+}
+
+.action-sidebar .action-item-disabled {
+	padding: 4px 8px;
+	cursor: default;
+}
+
+.action-sidebar .action-item .text {
+	font-size: 10pt;
+	color: #0066AA;
+}
+
+.action-sidebar .action-item-disabled .text-disabled {
+	font-size: 10pt;
+	color: #999999;
+}
+
+.action-sidebar .action-item .description, .action-sidebar .action-item-disabled .description {
+	font-size: 9pt;
+	color: #333333;
+	margin: 5px 0px 0px 0px;
+}
+.scheduleSubItemTitle{
+	font: 13pt Arial,Helvetica,Verdana,sans-serif;
+	color: #001166;
+	margin:0px 0px 10px 0px;
+	padding: 0px 0px 0px 4px;
+}
+.scheduleSubItemTitleMidle{
+	font: 13pt Arial,Helvetica,Verdana,sans-serif;
+	color: #001166;
+	margin: 20px 0px 10px 0px;
+	padding: 0px 0px 0px 4px;
+}
+
+.blueBackground {
+	background-color:#E3F2F5;
+}
+
+.greyBottomBorder {
+	border-bottom-style:solid;
+	border-width:1px;
+	border-color:#CED5DD;
+}
+
+.blueText {
+	color:  #0066af;
+	font-size: 13px;
+	font-weight: bold;
+	top: 2px !important;
+	white-space: nowrap;
+}
+
+.whiteBackground {
+	background-color:white;
+	color:#1A5EA1;
+	font-size: 10pt;
+}
+
+.gettingStartedIcon {
+	padding-left:10px;
+}
+
+.longWord {
+	word-break: break-all;
+}
+
+.x-item-disabled {
+    cursor: default;
+    opacity: .9;
+    -moz-opacity: .9;
+}
+.ext-ie .x-item-disabled {
+  filter: alpha(opacity = 90) !important;
+}
+.subItemTitle{
+	font: 13pt Arial,Helvetica,Verdana,sans-serif;
+	color: #001166;
+}
+
+.edgeHeader {
+	background-color: #38304C;
+}
+
+.edgeHeader .arcserveLogo {
+	margin-top: 28px;
+	margin-right: 50px;
+	margin-left: 43px;
+	margin-bottom: 27px;
+}
+
+.edgeHeader .brandingName {
+	white-space: nowrap;
+	margin-left: 12px;
+	margin-bottom: 23px;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.edgeHeader .taskLink a {
+	white-space: nowrap;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #F2B600;
+}
+
+.edgeHeader .logonUserItem {
+	margin-right: 26px;
+	margin-bottom: 23px;
+}
+
+.edgeHeader .helpItem {
+	margin-right: 26px;
+	margin-bottom: 23px;
+}
+
+.edgeHeader .separator {
+	background-color: #FFFFFF;
+	width: 1px;
+	height: 81px;
+}
+
+.edgeHeader .caLogo {
+	margin-left: 26px;
+	margin-right: 26px;
+	margin-bottom: 13px;
+}
+
+.edgeHeader .pluginPanel {
+	margin-top: 6px;
+	margin-right: 26px;
+}
+
+.edgeHeader .updateItem a {
+	white-space: nowrap;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #FFFFFF;
+	margin-left: 4px;
+}
+
+.edgeHeader .updateItem-Warning a {
+	color: #F2B600;
+}
+
+.edgeHeader .pluginSeparator {
+	background-color: #FFFFFF;
+	width: 1px;
+	height: 9px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 3px;
+}
+
+.edgeHeader .timeZoneItem {
+	white-space: nowrap;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.edgeHeader .x-btn-mc em.x-btn-arrow {
+	background-image: url(../asedl/images/button/arrow.gif) !important;
+}
+
+.no-btn-margin .x-btn button{
+	margin: 0;
+}
+
+.edgeDetailView {
+	background-color: #F6F6F6;
+}
+
+.x-tab-strip span.x-tab-strip-text.dimmed_tabitem {
+	color: #999999;
+}
+
+.edgeAboutWindow .x-window-body {
+	background-color: #FFFFFF;
+}
+
+.aboutText {
+	color: #000000;
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.edgeAboutWindow .licenseAgreement {
+	cursor: pointer;
+	cursor: hand;
+	text-decoration: underline;
+	margin-top: 14px;
+}
+
+.edgeAboutWindow .warnings {
+	margin-top: 14px;
+}
+
+.edgeAboutWindow .links {
+	margin-top: 48px;
+	margin-bottom: 13px;
+}
+
+.edgeAboutWindow .links .x-btn {
+	width: 177px;
+}
+
+.catalogExchInfoStyle {
+	background-color: #D1E1E8;
+	border: 1px solid #6ABFEB;
+}
+
+.catalogExchConfigInfoLinkStyle {
+	font-weight: bold;
+	color: #0066AA !important;
+	text-decoration:none;
+	cursor:pointer !important;
+}
+
+.catalogExchConfigInfoImageStyle {
+	margin-top: 1px;
+}
+
+.catalogExchDisabled .x-btn-over, 
+.catalogExchDisabled .x-btn-tl, .catalogExchDisabled .x-btn-tr, .catalogExchDisabled .x-btn-tc, 
+.catalogExchDisabled .x-btn-ml, .catalogExchDisabled .x-btn-mr, .catalogExchDisabled .x-btn-mc, 
+.catalogExchDisabled .x-btn-bl, .catalogExchDisabled .x-btn-br, .catalogExchDisabled .x-btn-bc {
+	background-image: url(../images/disable-ex-grt-secondary-btn.png) !important;
+	cursor: auto !important;	
+}
+
+.catalogExchDisabled p, .catalogExchDisabled b {
+	color: #38324C !important;
+}
+
+.infobox {
+    color: #000000 !important;
+    font-size: 13px;
+    font-family: arial, helvetica, sans-serif;
+    border-style: solid !important;
+    border-color: #0066aa !important;
+    border-width: 1px 1px 1px 6px !important;
+    padding: 8px 8px 8px 33px;    
+    margin: 10px;
+    background-color: #ECF5FF;
+    background-image: url("../images/info_24x24.png");
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}

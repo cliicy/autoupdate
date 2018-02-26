@@ -1,0 +1,23 @@
+9.0
+21
+1       SQLINT        0       4       ""   1     id                   ""
+2       SQLCHAR       0       24      ""   2     location             SQL_Latin1_General_CP1_CI_AS
+3       SQLCHAR       0       32      ""   3     name                 SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR       0       24      ""   4     acctnum              SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR       0       32      ""   5     contact              SQL_Latin1_General_CP1_CI_AS
+6       SQLCHAR       0       24      ""   6     phone                SQL_Latin1_General_CP1_CI_AS
+7       SQLCHAR       0       48      ""   7     street               SQL_Latin1_General_CP1_CI_AS
+8       SQLCHAR       0       32      ""   8     city                 SQL_Latin1_General_CP1_CI_AS
+9       SQLCHAR       0       24      ""   9     state                SQL_Latin1_General_CP1_CI_AS
+10      SQLCHAR       0       16      ""   10    zip                  SQL_Latin1_General_CP1_CI_AS
+11      SQLCHAR       0       32      ""   11    country              SQL_Latin1_General_CP1_CI_AS
+12      SQLCHAR       0       32      ""   12    scompany             SQL_Latin1_General_CP1_CI_AS
+13      SQLCHAR       0       32      ""   13    sname                SQL_Latin1_General_CP1_CI_AS
+14      SQLCHAR       0       24      ""   14    sphone               SQL_Latin1_General_CP1_CI_AS
+15      SQLCHAR       0       48      ""   15    sstreet              SQL_Latin1_General_CP1_CI_AS
+16      SQLCHAR       0       32      ""   16    scity                SQL_Latin1_General_CP1_CI_AS
+17      SQLCHAR       0       24      ""   17    sstate               SQL_Latin1_General_CP1_CI_AS
+18      SQLCHAR       0       16      ""   18    szip                 SQL_Latin1_General_CP1_CI_AS
+19      SQLCHAR       0       32      ""   19    scountry             SQL_Latin1_General_CP1_CI_AS
+20      SQLCHAR       0       80      ""   20    comment              SQL_Latin1_General_CP1_CI_AS
+21      SQLINT        0       4       ""   21    branchid             ""

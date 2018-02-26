@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeySchema>
+	<Tables>
+		<Table Name="sync_as_asauthuser">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_ashost">
+			<Columns>
+				<Column Name="rhostid" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_asjob">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_asjobmap">
+			<Columns>
+				<Column Name="jobid" DataType="int" IsKey="True" />
+				<Column Name="commonjobid" DataType="int" IsKey="True" />
+				<Column Name="masterslaveflag" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_aslogw">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_asnode">
+			<Columns>
+				<Column Name="exectime" DataType="datetime" IsKey="True"></Column>
+				<Column Name="jobno" DataType="int" IsKey="True"></Column>
+				<Column Name="commonjobid" DataType="int" IsKey="True"></Column>
+				<Column Name="nodename" DataType="nvarchar" IsKey="True"></Column>
+			</Columns>
+		</Table>
+		<Table Name="sync_as_aspathname">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_aspathnamew">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_aspool">
+			<Columns>
+				<Column Name="pool" DataType="char" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_assguid">
+			<Columns>
+				<Column Name="sessid" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_asstaging">
+			<Columns>
+				<Column Name="sessid" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_astape">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_astopology">
+			<Columns>
+				<Column Name="servername" DataType="char" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_astpses">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_asvmtopology">
+			<Columns>
+				<Column Name="vmname" DataType="nvarchar" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_astpdrv">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_astpdrv_ext">
+			<Columns>
+				<Column Name="deviceid" DataType="int" IsKey="True" />
+				<Column Name="tdhostname" DataType="nvarchar" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_as_custom_group">
+			<Columns>
+				<Column Name="guid" DataType="uniqueidentifier" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_as_custom_group_map">
+			<Columns>
+				<Column Name="groupguid" DataType="uniqueidentifier" IsKey="True" />
+				<Column Name="rhostid" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_asvmware">
+			<Columns>
+				<Column Name="vcbproxyserver" DataType="nvarchar" IsKey="True" />
+				<Column Name="esxserver" DataType="nvarchar" IsKey="True" />
+				<Column Name="vmname" DataType="nvarchar" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_cpuInfo">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_diskInfo">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_fragment_record">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_ipInfo">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_map_disk2volume">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_memInfo">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_nicInfo">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_node">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_node2host">
+			<Columns>
+				<Column Name="RhostID" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_osInfo">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_volumeInfo">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_agentInfo">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_fibercardInfo">
+			<Columns>
+				<Column Name="ID" DataType="int" IsKey="True" IsIdentity="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_component2license">
+			<Columns>
+				<Column Name="topologyId" DataType="int" IsKey="True" />
+				<Column Name="componentId" DataType="int" IsKey="True" />
+				<Column Name="majorVersion" DataType="int" IsKey="True" />
+				<Column Name="minorVersion" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_appTrending">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_cpuTrending">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_memTrending">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_nicTrending">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_phydskTrending">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_swInfo">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_swpatchInfo">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_unchgfile_info">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_unchgfile_policy">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_tbl_wcf_volTrending">
+			<Columns>
+				<Column Name="id" DataType="int" IsKey="True" />
+			</Columns>
+		</Table>
+		<Table Name="sync_as_as_ex_exchangeinfo">
+			<Columns>
+				<Column Name="ServerName" DataType="nvarchar" IsKey="True" />
+				<Column Name="domain" DataType="nvarchar" IsKey="True" />
+			</Columns>
+		</Table>
+	</Tables>
+</KeySchema>

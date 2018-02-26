@@ -1,0 +1,15 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {8A0C12EF-1BB5-4B75-AF87-D70DA5E63FB3} = s 'CNativeCmdCtrl Class'
+		{
+			LocalServer32 = s '%MODULE%'
+			{
+				val ServerExecutable = s '%MODULE_RAW%'
+			}
+			TypeLib = s '{9D2569A0-4140-4317-897F-124C3CD527E4}'
+			Version = s '1.0'
+		}
+	}
+}

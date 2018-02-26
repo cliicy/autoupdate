@@ -1,0 +1,37 @@
+9.0
+35
+1       SQLINT        0       4       ""   1     id                             ""
+2       SQLINT        0       4       ""   2     vaultid                        ""
+3       SQLINT        0       4       ""   3     previd                         ""
+4       SQLINT        0       4       ""   4     prevvaultid                    ""
+5       SQLINT        0       4       ""   5     empty                          ""
+6       SQLINT        0       4       ""   6     mediatype                      ""
+7       SQLINT        0       4       ""   7     mediaclass                     ""
+8       SQLINT        0       4       ""   8     sequence                       ""
+9       SQLSMALLINT   0       2       ""   9     status                         ""
+10      SQLSMALLINT   0       2       ""   10    bexport                        ""
+11      SQLDATETIME   0       8       ""   11    expdt                          ""
+12      SQLINT        0       4       ""   12    tapeid                         ""
+13      SQLCHAR       0       24      ""   13    medianame                      SQL_Latin1_General_CP1_CI_AS
+14      SQLINT        0       4       ""   14    randomid                       ""
+15      SQLINT        0       4       ""   15    seqnum                         ""
+16      SQLINT        0       4       ""   16    raidid                         ""
+17      SQLCHAR       0       32      ""   17    serialno                       SQL_Latin1_General_CP1_CI_AS
+18      SQLCHAR       0       24      ""   18    tapeuuid                       SQL_Latin1_General_CP1_CI_AS
+19      SQLDATETIME   0       8       ""   19    tapelastwrite                  ""
+20      SQLDATETIME   0       8       ""   20    tapelastread                   ""
+21      SQLCHAR       0       40      ""   21    dbname                         SQL_Latin1_General_CP1_CI_AS
+22      SQLINT        0       4       ""   22    vcdid                          ""
+23      SQLINT        0       4       ""   23    scheduleid                     ""
+24      SQLCHAR       0       80      ""   24    prevedmid                      SQL_Latin1_General_CP1_CI_AS
+25      SQLDATETIME   0       8       ""   25    cdate                          ""
+26      SQLDATETIME   0       8       ""   26    ldate                          ""
+27      SQLCHAR       0       32      ""   27    cuserid                        SQL_Latin1_General_CP1_CI_AS
+28      SQLCHAR       0       32      ""   28    luserid                        SQL_Latin1_General_CP1_CI_AS
+29      SQLINT        0       4       ""   29    cycle                          ""
+30      SQLINT        0       4       ""   30    rotationid                     ""
+31      SQLINT        0       4       ""   31    exceptid                       ""
+32      SQLINT        1       4       ""   32    reserved                       ""
+33      SQLINT        1       4       ""   33    reserved1                      ""
+34      SQLINT        1       4       ""   34    reserved2                      ""
+35      SQLINT        0       4       ""   35    branchid                       ""

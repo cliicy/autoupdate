@@ -1,0 +1,7 @@
+9.0
+5
+1       SQLCHAR       0       16      ""   1     askey                SQL_Latin1_General_CP1_CI_AS
+2       SQLCHAR       0       32      ""   2     cvalue               SQL_Latin1_General_CP1_CI_AS
+3       SQLINT        0       4       ""   3     ivalue               ""
+4       SQLINT        0       4       ""   4     reserved             ""
+5       SQLINT        0       4       ""   5     branchid             ""

@@ -1,0 +1,8 @@
+9.0
+6
+1       SQLNCHAR      2       512     ""   1     ServerName               SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR      2       128     ""   2     ipaddress                SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       512     ""   3     domain                   SQL_Latin1_General_CP1_CI_AS
+4       SQLSMALLINT   1       2       ""   4     TypeFlag                 ""
+5       SQLNCHAR      2       512     ""   5     DAGName                  SQL_Latin1_General_CP1_CI_AS
+6       SQLINT        0       4       ""   6     branchid                 ""

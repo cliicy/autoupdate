@@ -1,0 +1,7 @@
+9.0
+5
+1       SQLINT        0       4       ""   1     ID                               ""
+2       SQLNCHAR      2       510     ""   2     Name                             SQL_Latin1_General_CP1_CI_AS
+3       SQLINT        0       4       ""   3     Virtualization                   ""
+4       SQLDATETIME   0       8       ""   4     LastUpdate                       ""
+5       SQLINT        0       4       ""   5     branchid                         ""

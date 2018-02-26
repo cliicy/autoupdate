@@ -1,0 +1,14 @@
+9.0
+12
+1       SQLINT        0       4       ""   1     id                         ""
+2       SQLINT        0       4       ""   2     authuserid                 ""
+3       SQLINT        0       4       ""   3     rhostid                    ""
+4       SQLNCHAR      2       512     ""   4     object                     SQL_Latin1_General_CP1_CI_AS
+5       SQLINT        0       4       ""   5     type                       ""
+6       SQLINT        0       4       ""   6     subtype                    ""
+7       SQLNCHAR      2       512     ""   7     domain                     SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR      2       512     ""   8     username                   SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR      2       512     ""   9     password                   SQL_Latin1_General_CP1_CI_AS
+10      SQLINT        1       4       ""   10    ultype                     ""
+11      SQLNCHAR      2       512     ""   11    description                SQL_Latin1_General_CP1_CI_AS
+12      SQLINT        0       4       ""   12    branchid                   ""

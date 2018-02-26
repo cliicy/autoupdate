@@ -1,0 +1,24 @@
+9.0
+22
+1       SQLINT        0       4       ""   1     sessid                                 ""
+2       SQLINT        0       4       ""   2     parentjobid                            ""
+3       SQLINT        0       4       ""   3     masterjobid                            ""
+4       SQLCHAR       2       16      ""   4     ds_groupname                           SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR       2       24      ""   5     dm_tapename                            SQL_Latin1_General_CP1_CI_AS
+6       SQLINT        0       4       ""   6     dm_taperandomid                        ""
+7       SQLINT        0       4       ""   7     dm_tapeseqnum                          ""
+8       SQLCHAR       2       32      ""   8     dm_serial                              SQL_Latin1_General_CP1_CI_AS
+9       SQLCHAR       2       16      ""   9     dm_groupname                           SQL_Latin1_General_CP1_CI_AS
+10      SQLCHAR       2       16      ""   10    dm_poolname                            SQL_Latin1_General_CP1_CI_AS
+11      SQLINT        0       4       ""   11    dm_tapeselflag                         ""
+12      SQLINT        0       4       ""   12    dm_tapeseltimeout                      ""
+13      SQLINT        0       4       ""   13    dm_spanselflag                         ""
+14      SQLINT        0       4       ""   14    dm_spanseltimeout                      ""
+15      SQLDATETIME   0       8       ""   15    dm_duedate                             ""
+16      SQLDATETIME   0       8       ""   16    pruneduedate                           ""
+17      SQLDATETIME   0       8       ""   17    executiondate                          ""
+18      SQLINT        0       4       ""   18    stagingflags                           ""
+19      SQLINT        0       4       ""   19    ismigrated                             ""
+20      SQLINT        0       4       ""   20    snaplock                               ""
+21      SQLINT        0       4       ""   21    lastvaliddest                          ""
+22      SQLINT        0       4       ""   22    branchid                               ""

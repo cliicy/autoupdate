@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <filter>
+        <filter-name>ClickjackFilter Same Origin</filter-name>
+        <filter-class>com.ca.arcflash.ui.server.servlet.ClickjackingFilter</filter-class>
+           <init-param>
+            <param-name>mode</param-name>
+            <param-value>SAMEORIGIN</param-value>            
+        </init-param>
+         <init-param>           
+            <param-name>enableCheck</param-name>
+            <param-value>1</param-value>
+        </init-param>
+    </filter>    
+
+    <filter-mapping> 
+        <filter-name>ClickjackFilter Same Origin</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping> 
+    
+	<!-- filter>
+		<filter-name>ExpiresFilter</filter-name>
+		<filter-class>org.apache.catalina.filters.ExpiresFilter</filter-class>
+		<init-param>
+			<param-name>ExpiresByType image</param-name>
+			<param-value>modification plus 1 seconds</param-value>
+		</init-param>
+	</filter-->
+    
+	
+	<filter>
+		<filter-name>Session Filter</filter-name>
+		<filter-class>com.ca.arcflash.ui.server.servlet.SessionFilter</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>RSS Filter</filter-name>
+		<filter-class>com.ca.arcflash.ui.server.servlet.RSSFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>Session Filter</filter-name>
+		<url-pattern>/index.html</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>RSS Filter</filter-name>
+		<url-pattern>/rss.jsp</url-pattern>
+	</filter-mapping>	
+
+	<!-- filter-mapping>
+		<filter-name>ExpiresFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping-->
+	<listener>
+        <listener-class>com.ca.arcflash.ui.server.servlet.ContextListener</listener-class>
+    </listener>
+    	<listener>
+    	<listener-class>com.ca.arcflash.ui.server.servlet.SessionListener</listener-class>
+    	</listener>
+
+	<servlet>
+		<servlet-name>homepageServlet</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.HomepageServiceImpl</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>entitlementRegisterService</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.EntitlementRegisterServiceImpl</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>notificationService</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.NotificationServiceImpl</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.LoginServiceImpl</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>commonServlet</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.CommonServiceImpl</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>monitorServlet</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.MonitorServiceImpl</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>coldStandbyServlet</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.ColdStandbyServiceImpl</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>rpsCommonServlet</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.CommonRPSService4D2DImpl</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ServiceInfoGen</servlet-name>
+		<display-name>ServiceInfoGen</display-name>
+		<description>generate the list of web service features</description>
+		<servlet-class>
+			com.ca.arcflash.ui.server.servlet.ServiceInfoGen</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>internalLoginServlet</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.InternalLoginServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>internalSessionLoginServlet</servlet-name>
+		<servlet-class>com.ca.arcflash.ui.server.InternalSessionLoginServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>commonServlet</servlet-name>
+		<url-pattern>/contents/service/common</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>homepageServlet</servlet-name>
+		<url-pattern>/contents/service/homepage</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>entitlementRegisterService</servlet-name>
+		<url-pattern>/contents/entitlementRegister</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>notificationService</servlet-name>
+		<url-pattern>/contents/notification</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/contents/service/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>internalLoginServlet</servlet-name>
+		<url-pattern>/internalLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>internalSessionLoginServlet</servlet-name>
+		<url-pattern>/internalSessionLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>monitorServlet</servlet-name>
+		<url-pattern>/contents/service/monitor</url-pattern>
+	</servlet-mapping>
+		
+	<servlet-mapping>
+		<servlet-name>coldStandbyServlet</servlet-name>
+		<url-pattern>/contents/service/coldStandby</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>rpsCommonServlet</servlet-name>
+		<url-pattern>/contents/service/rpsd2d</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ServiceInfoGen</servlet-name>
+		<url-pattern>/ListService</url-pattern>
+	</servlet-mapping>
+		<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>restricted methods</web-resource-name>
+			<url-pattern>/*</url-pattern>
+			<http-method>PUT</http-method>			
+			<http-method>DELETE</http-method>
+			<http-method>OPTIONS</http-method>
+			<http-method>TRACE</http-method>
+		</web-resource-collection>
+		<auth-constraint />
+	</security-constraint>
+
+</web-app>

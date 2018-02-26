@@ -1,0 +1,17 @@
+9.0
+15
+1       SQLINT        0       4       ""   1     id                     ""
+2       SQLINT        1       4       ""   2     padding                ""
+3       SQLCHAR       0       24      ""   3     vaultname              SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR       0       255     ""   4     descript               SQL_Latin1_General_CP1_CI_AS
+5       SQLINT        0       4       ""   5     blocal                 ""
+6       SQLINT        0       4       ""   6     maxslots               ""
+7       SQLINT        0       4       ""   7     actvslots              ""
+8       SQLINT        0       4       ""   8     freeslots              ""
+9       SQLDATETIME   0       8       ""   9     cdate                  ""
+10      SQLDATETIME   0       8       ""   10    ldate                  ""
+11      SQLCHAR       0       32      ""   11    cuserid                SQL_Latin1_General_CP1_CI_AS
+12      SQLCHAR       0       32      ""   12    luserid                SQL_Latin1_General_CP1_CI_AS
+13      SQLINT        1       4       ""   13    reserved               ""
+14      SQLINT        1       4       ""   14    reserved1              ""
+15      SQLINT        0       4       ""   15    branchid               ""

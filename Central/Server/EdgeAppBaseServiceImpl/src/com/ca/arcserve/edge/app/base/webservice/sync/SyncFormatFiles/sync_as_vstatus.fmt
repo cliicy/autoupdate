@@ -1,0 +1,14 @@
+9.0
+12
+1       SQLSMALLINT   1       2       ""   1     status                 ""
+2       SQLSMALLINT   1       2       ""   2     padding1               ""
+3       SQLINT        1       4       ""   3     padding2               ""
+4       SQLCHAR       2       32      ""   4     who                    SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR       2       24      ""   5     what                   SQL_Latin1_General_CP1_CI_AS
+6       SQLCHAR       2       64      ""   6     vwhere                 SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME   1       8       ""   7     whendate               ""
+8       SQLDATETIME   1       8       ""   8     finidate               ""
+9       SQLCHAR       2       80      ""   9     lastdsn                SQL_Latin1_General_CP1_CI_AS
+10      SQLINT        1       4       ""   10    reserved               ""
+11      SQLINT        1       4       ""   11    reserved1              ""
+12      SQLINT        0       4       ""   12    branchid               ""

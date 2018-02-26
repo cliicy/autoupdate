@@ -1,0 +1,15 @@
+9.0
+13
+1       SQLINT        0       4       ""   1     sessid                     ""
+2       SQLBINARY     2       16      ""   2     sessguid                   ""
+3       SQLBINARY     2       16      ""   3     msessguid                  ""
+4       SQLINT        1       4       ""   4     logicalpid                 ""
+5       SQLINT        1       4       ""   5     physicalpid                ""
+6       SQLSMALLINT   1       2       ""   6     appType                    ""
+7       SQLBIGINT     1       8       ""   7     scenarioid                 ""
+8       SQLINT        1       4       ""   8     flag_ext                   ""
+9       SQLINT        1       4       ""   9     encr_algo                  ""
+10      SQLINT        1       4       ""   10    src_app_ver                ""
+11      SQLBINARY     2       256     ""   11    password                   ""
+12      SQLINT        1       4       ""   12    snapshotid                 ""
+13      SQLINT        0       4       ""   13    branchid                   ""

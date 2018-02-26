@@ -1,0 +1,10 @@
+9.0
+8
+1       SQLNCHAR      2       512     ""   1     vcbproxyserver                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR      2       512     ""   2     esxserver                        SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       512     ""   3     vmname                           SQL_Latin1_General_CP1_CI_AS
+4       SQLSMALLINT   1       2       ""   4     ostype                           ""
+5       SQLINT        0       4       ""   5     xmlsize                          ""
+6       SQLIMAGE      4       0       ""   6     xml                              ""
+7       SQLSMALLINT   1       2       ""   7     vmtype                           ""
+8       SQLINT        0       4       ""   8     branchid                         ""

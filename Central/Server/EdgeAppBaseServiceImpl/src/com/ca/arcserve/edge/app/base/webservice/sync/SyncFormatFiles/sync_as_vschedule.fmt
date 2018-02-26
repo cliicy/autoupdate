@@ -1,0 +1,6 @@
+9.0
+4
+1       SQLINT        0       4       ""   1     id                   ""
+2       SQLINT        1       4       ""   2     padding              ""
+3       SQLCHAR       0       80      ""   3     schedule             SQL_Latin1_General_CP1_CI_AS
+4       SQLINT        0       4       ""   4     branchid             ""

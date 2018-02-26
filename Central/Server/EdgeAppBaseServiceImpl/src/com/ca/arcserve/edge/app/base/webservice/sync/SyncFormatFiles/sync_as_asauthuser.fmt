@@ -1,0 +1,11 @@
+9.0
+9
+1       SQLINT        0       4       ""   1     id                         ""
+2       SQLINT        0       4       ""   2     topologyid                 ""
+3       SQLNCHAR      2       512     ""   3     username                   SQL_Latin1_General_CP1_CI_AS
+4       SQLINT        0       4       ""   4     usertype                   ""
+5       SQLNCHAR      2       512     ""   5     password                   SQL_Latin1_General_CP1_CI_AS
+6       SQLINT        0       4       ""   6     status                     ""
+7       SQLBINARY     2       256     ""   7     checkbits                  ""
+8       SQLNCHAR      2       512     ""   8     description                SQL_Latin1_General_CP1_CI_AS
+9       SQLINT        0       4       ""   9     branchid                   ""

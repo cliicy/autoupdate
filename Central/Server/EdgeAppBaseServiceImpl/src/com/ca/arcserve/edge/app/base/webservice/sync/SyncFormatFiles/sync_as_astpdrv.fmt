@@ -1,0 +1,37 @@
+9.0
+35
+1       SQLINT        0       4       ""   1     id                                 ""
+2       SQLSMALLINT   1       2       ""   2     adapterid                          ""
+3       SQLSMALLINT   1       2       ""   3     adapterbusid                       ""
+4       SQLSMALLINT   1       2       ""   4     scsiid                             ""
+5       SQLSMALLINT   1       2       ""   5     lun                                ""
+6       SQLSMALLINT   1       2       ""   6     devicetype                         ""
+7       SQLCHAR       2       18      ""   7     productname                        SQL_Latin1_General_CP1_CI_AS
+8       SQLCHAR       2       8       ""   8     productrevision                    SQL_Latin1_General_CP1_CI_AS
+9       SQLCHAR       2       8       ""   9     prevrevision                       SQL_Latin1_General_CP1_CI_AS
+10      SQLCHAR       2       10      ""   10    vendorname                         SQL_Latin1_General_CP1_CI_AS
+11      SQLSMALLINT   1       2       ""   11    compliance                         ""
+12      SQLSMALLINT   1       2       ""   12    tdreserved1                        ""
+13      SQLINT        1       4       ""   13    hdcleancount                       ""
+14      SQLDATETIME   1       8       ""   14    hdcleandate                        ""
+15      SQLINT        1       4       ""   15    tdusagetime                        ""
+16      SQLINT        1       4       ""   16    tdblocksize                        ""
+17      SQLINT        1       4       ""   17    tdttlkbwritten                     ""
+18      SQLINT        1       4       ""   18    tdttlmediaerr                      ""
+19      SQLINT        1       4       ""   19    tdttlswerr                         ""
+20      SQLSMALLINT   1       2       ""   20    tddestroyed                        ""
+21      SQLSMALLINT   1       2       ""   21    tdreserved2                        ""
+22      SQLCHAR       2       4       ""   22    tdreserved3                        SQL_Latin1_General_CP1_CI_AS
+23      SQLCHAR       2       64      ""   23    tdhostname                         SQL_Latin1_General_CP1_CI_AS
+24      SQLCHAR       2       32      ""   24    tdserialno                         SQL_Latin1_General_CP1_CI_AS
+25      SQLDATETIME   1       8       ""   25    tdservicedate                      ""
+26      SQLINT        1       4       ""   26    tdttlkbread                        ""
+27      SQLINT        1       4       ""   27    tdttlmounts                        ""
+28      SQLINT        1       4       ""   28    tdttlseeks                         ""
+29      SQLINT        1       4       ""   29    tdttlmovemedia                     ""
+30      SQLCHAR       2       16      ""   30    tdreserved                         SQL_Latin1_General_CP1_CI_AS
+31      SQLCHAR       2       32      ""   31    parentserialno                     SQL_Latin1_General_CP1_CI_AS
+32      SQLSMALLINT   1       2       ""   32    totaldrives                        ""
+33      SQLINT        1       4       ""   33    totalslots                         ""
+34      SQLINT        1       4       ""   34    deviceflag                         ""
+35      SQLINT        0       4       ""   35    branchid                           ""

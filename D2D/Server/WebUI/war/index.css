@@ -1,0 +1,1962 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-family: Tahoma,Arial;
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+
+
+.sendButton {
+  display: block;
+  font-family: Tahoma,Arial;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+.restoreWizardTitle {
+  font-family: Tahoma,Arial;
+  font-size: 16px;  
+  color: #000000;
+  margin: 5px;  
+  font-weight: bold;
+}
+
+.restoreWizardSubItem {
+  font-family: Tahoma,Arial;
+  font-size: 10pt;  
+  font-weight: bold;
+  color: #000000;
+}
+
+.restoreWizardSubItemDescription {
+  font-family: Tahoma,Arial;
+  font-size: 12px;  
+  color: #000000;
+}
+
+.restoreWizardLeftSpacing {
+  margin: 2px 2px 2px 2px;
+}
+
+.restoreWizardTopSpacing{
+	margin-top: 4px;
+	margin-bottom: 8px;
+}
+
+
+.browseTitle {
+  font-family: Tahoma,Arial;
+  font-size: 12pt;  
+  color: #000000;
+}
+
+.browseLoading {
+	text-align: center;
+}
+
+.restoreBrowse-icon { 
+	background: url(./images/restore_browse.png) no-repeat center left !important;
+	overflow: visible;
+ }
+ 
+ .restoreSearch-icon { 
+ 	background: url(./images/restore_search.png) no-repeat center left !important;
+ 	overflow: visible;
+ }
+ 
+ .restoreOptions-icon { 
+ 	background: url(./images/restore_options.png) no-repeat center left !important;
+	overflow: visible;
+ }
+ 
+ .file-icon { 
+ 	background: url(./images/file.gif) no-repeat center left !important;
+ 	cursor: default;
+	overflow: visible;
+ }
+ 
+ .folder-icon { 
+ 	background: url(./images/folder.gif) no-repeat center left !important;
+ 	cursor: default;
+ 	overflow: visible;
+ }
+ 
+ .folder-icon-over { 
+ 	background: url(./images/folder.gif) no-repeat center left !important;
+ 	cursor: default;
+ 	overflow: visible;
+ }
+ 
+ .drive-icon { 
+ 	background: url(./images/drive.gif) no-repeat center left !important;
+	cursor: default;
+	overflow: visible;
+ }
+ 
+ .network-drive-icon { 
+ 	background: url(./images/network_drive.gif) no-repeat center left !important;
+	cursor: default;
+	overflow: visible;
+ }
+ 
+ .drive-skipped-icon { 
+ 	background: url(./images/drive_skipped.gif) no-repeat center left !important;
+	cursor: default;
+	overflow: visible;
+ }
+ 
+ .system-drive-icon { 
+ 	background: url(./images/system_disk.gif) no-repeat center left !important;
+	cursor: default;
+	overflow: visible;
+ }
+ 
+ .system-drive-skipped-icon { 
+ 	background: url(./images/system_disk_skipped.gif) no-repeat center left !important;
+	cursor: default;
+	overflow: visible;
+ }
+ 
+ .boot-drive-icon { 
+ 	background: url(./images/boot_disk.gif) no-repeat center left !important;
+	cursor: default;
+	overflow: visible;
+ }
+ 
+ .boot-drive-skipped-icon { 
+ 	background: url(./images/boot_disk_skipped.gif) no-repeat center left !important;
+	cursor: default;
+	overflow: visible;
+ }
+ 
+ .leftAlignTest{
+ 	text-align: left;
+ }
+
+ .x-date-highlighted a{
+    background-color:#11ff11;
+	border-color:#000000;
+}
+
+.x-date-highlighted-Error a{
+    background-color:#EE4444;
+	border-color:#000000;
+}
+
+.x-date-highlighted-Warning a{
+    background-color:#ffdd00;
+	border-color:#000000;
+}
+
+  .x-date-highlighted-grey a{
+    background-color:#aadd99;
+	border-color:#000000;
+ }
+ 
+.x-date-highlighted span, .x-date-highlighted-Error span, .x-date-highlighted-Warning span{
+    font-weight:bold;
+}
+ .exportMainStyle {
+ 	margin: 10px 15px 10px 15px;
+ }
+ 
+.homepage_task_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt;  
+	font-weight: bold;
+  	color: #000000;
+  	cursor: pointer;
+ }
+ .homepage_trusthost_hyperlink_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: #000000;
+  	cursor: pointer;
+  	white-space: nowrap;
+ }
+ .homepage_trusthost_hyperlink_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: black;
+  	cursor: pointer;
+  	white-space: nowrap;  	
+  	text-decoration: underline;
+ }
+  .homepage_trusthost__hyperlink_sep{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 11pt;  	
+  	color: #000000;   	
+  	padding-left: 3px;
+  	padding-right: 3px;
+ }
+ 
+.homepage_task_description{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #000000;
+  	padding-top: 2px;
+  	padding-bottom:2px;
+ }
+ 
+.homepage_task_hr{
+ 	color: gray;
+	height: 2px;
+}
+
+.homepage_NewUpdates_Label{
+	font-family: Tahoma,Arial;
+ 	font-size: 11pt;  
+	font-weight: bold;
+  	color: #000000;
+  	padding-left: 10px;
+  	cursor: pointer;
+}
+
+.homepage_NewUpdates_Description{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #000000;
+  	padding-left: 10px;
+  	padding-top: 2px;
+  	padding-bottom:2px;
+  	cursor: pointer;
+ }
+
+ /**.homepage_NewUpdates_Icon{
+ 	cursor: pointer;
+ }*/
+
+.homepage_summary_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 11pt;  
+	font-weight: bold;
+  	color: #000000;
+  	padding-left: 10px;
+}
+
+.homepage_summary_loading_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 11pt;  
+	font-weight: normal;
+  	color: #000000;
+  	padding-left: 10px;
+}
+ 
+.homepage_summary_description{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #000000;
+  	padding-left: 10px;
+  	padding-top: 2px;
+  	padding-bottom:2px;
+ }
+  
+.homepage_summary_legengLabel{
+	font-family: Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #000000;
+  	padding-left: 4px;
+  	padding-right: 25px;
+	}
+	
+ .homepage_summary_hyperlink_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: #52729c;
+  	cursor: pointer;
+  	white-space: nowrap;  	
+  	text-decoration: underline;
+  	padding: 0 8 0 9;
+ }
+ 
+  .homepage_summary_fieldset{
+  	padding:10px;
+  	margin:10px;
+  	background-color:#ffffff;
+ }	
+ 
+ .homepage_summary_fieldset_label{
+	font-family: Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #000000;
+  	padding-right: 25px;
+}
+	
+.virtual_conver_summary_table{
+	width: 90%;
+	border: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+.virtual_conver_summary_charts_panel{
+	padding: 10px 10px 0px 0px;
+	width: 100%;
+}
+	
+.virtual_conver_summary_charts{
+	border: 1px solid #000000;
+	height: 15px;
+}
+.virtual_conver_summary_chart_words{
+	font-family: Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #000000;
+  	height: 20px;
+}
+
+.vc_navigator_group{
+	font-family: Tahoma,Arial;
+	font-weight: bold;
+	font-size: 9pt;
+	}
+	
+.vc_navigator_actionrequired_group{
+	font-family: Tahoma,Arial;
+	font-weight: bold;
+	font-size: 9pt;
+	background-color: #ff8080;
+}
+	
+.vc_navigator_servers{
+	font-family: Tahoma,Arial;
+	font-size: 10pt;
+}
+	
+.homepage_nextScheduleEvent{
+	font-family: Tahoma,Arial;
+ 	font-size: 10pt;  
+  	color: #000000;
+  	padding: 4px;
+	}
+.homepage_support_label{
+ 	
+ }
+ 
+.homepage_support_description{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #000000;
+  	padding-top: 2px;
+  	padding-bottom: 8px;
+ }
+ 
+.home_chart_description{
+	font-family: Tahoma,Arial;
+	font-size: 9pt; 
+	text-align: left;
+	}
+
+.jobMonitor_progress{
+	padding-left:10px;
+}
+
+.jobMonitor_progress_text {
+	font-family: Tahoma,Arial;
+ 	font-size: 12px;  
+}
+  .jobMonitor_headingsub_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 12px;  
+	font-weight: bold;
+  	color: #000000;
+  	margin-left:20px;
+ }
+.jobMonitor_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 12px;  
+	font-weight: bold;
+  	color: #000000;
+  	padding-top: 2px;
+  	margin-left:10px;
+ }
+.jobMonitor_value{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 12px;  
+  	color: #000000;
+  	padding-left: 10px;
+  	padding-right: 20px;
+  	padding-top: 2px;
+ }
+ .homepage_task_icon{
+ 	cursor: pointer;
+ }
+ 
+  .homepage_logo{
+ 	cursor: default;
+ 	/*width: 256px;*/
+	height: 40px;
+	background: url(images/5.0/agent_login_header.png) no-repeat 0px 0px;
+	padding-left:189px;
+	font-family: Tahoma,Arial;
+ 	font-size: 14pt; 	
+ 	color: #c3d2eb;
+ 	/*line-height:48px;*/
+  	white-space: nowrap;
+ }
+ .aboutWindow_Label{
+	font-family: Tahoma,Arial;
+ 	font-size: 10pt;  
+  	color: #000000;
+  	padding-top: 2px;
+  	padding-left: 6px;
+	}
+.green-partial { 
+	background: url(./images/green-partial.gif) no-repeat center left !important;
+	overflow: visible;
+}
+ 
+.green-full { 
+	background: url(./images/green-full.gif) no-repeat center left !important;
+	overflow: visible;
+}
+ 
+.green-none { 
+	background: url(./images/green-none.gif) no-repeat center left !important; 
+	overflow: visible;
+}
+ 
+.grey-partial { background: url(./images/grey-partial.gif) no-repeat center left !important;
+
+}
+ 
+.grey-full { background: url(./images/grey-full.gif) no-repeat center left !important;
+
+}
+ 
+.grey-none { background: url(./images/grey-none.gif) no-repeat center left !important;
+
+} 
+
+.news_title {
+ 	margin: 0px 0px 0px 5px;
+ 	text-align: left;
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt;
+ 	font-weight: bold;  
+  	color: #000000;
+  	cursor: pointer;
+ }
+ 
+ .news_description {
+ 	text-align: left;
+ 	font-family: Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #11628A;
+  	cursor: pointer;
+  }
+  
+  .news_image {
+  	cursor: pointer;
+  }
+ 
+ .connectDialogSpacing {
+  margin: 0px 0px 0px 15px;
+}
+
+.failmodestyle {
+	font-size: 15pt;  
+  	font-weight: bold;
+  	color: #FF0000;
+ 	font-family: Tahoma,Arial;
+ 	text-align: center;
+ 	vertical-align: middle;
+	}
+
+.demo-ToggleButton
+{
+	background: url(images/bkg-pressed.png) 0% 0% repeat-x;    
+
+    cursor                      :    hand;
+    cursor                      :    pointer;
+    font-size                   :    75%;
+
+	padding                     :    12px;
+    text-align                  :    center;    
+}
+.demo-ToggleButton-up-hovering
+{
+    cursor                      :    hand;
+    cursor                      :    pointer;
+    font-size                   :    75%;
+
+    text-align                  :    center;
+
+}
+.demo-ToggleButton-down, .demo-ToggleButton-down-hovering
+{
+    background: url(images/bkg1.png) 0% 0% repeat-x;    
+
+    cursor                      :    hand;
+    cursor                      :    pointer;
+    font-size                   :    75%;
+
+    text-align                  :    center;
+
+}
+
+
+.tb-settings
+{
+	background: url(images/bkg-pressed-2.png) 0% 0% repeat;
+	background-color: #08517C;	    
+	color                       :    #FFF;
+	cursor                      :    hand;
+    cursor                      :    pointer;
+    font-weight					: 	 bold;
+	padding                     :    5px;
+    text-align                  :    center;  
+    font-size					: 	 12px;   
+    
+}
+.tb-settings-up-hovering
+{
+    cursor                      :    hand;
+    cursor                      :    pointer;
+    font-weight: bold;
+	text-align                  :    center;
+}
+.tb-settings-down, .tb-settings-down-hovering
+{
+	background: url(images/bkg1-2.png) 0% 0% repeat;   
+    cursor                      :    hand;
+    cursor                      :    pointer; 
+    font-weight					: 	 bold;
+    text-align                  :    center;
+}
+
+.settingsDialogButtonLabel {
+	background-color: #08517C;
+	color: #FFFFFF  
+	font-weight: bold;
+	text-align: center;
+}
+
+.settingsDialogButtonLabel-down {
+	background-color: #5F6469;
+	color: #FFFFFF
+	font-weight: bold;
+	text-align: center;
+}
+
+.main{ background: #38304c}
+
+.login-background { background: #38304c url(images/5.0/agent_login_background.jpg) no-repeat;
+}
+
+.buildtext{
+	font-family: "Arial";
+ 	font-size: 10px; 
+ 	color: #848484; 
+}
+
+.login-input{
+	font-family: "Arial Regular";
+ 	font-size: 12px; 
+ 	color: #acacac; 
+}
+
+.text_AddServer{
+	padding-left: 4px;
+	font-family: Tahoma,Arial;
+ 	font-size: 10pt;  
+ 	cursor: pointer;
+ 	text-decoration: underline;
+ 	white-space: nowrap;
+	}
+.homepage_trusthost_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: #000000;
+  	white-space: nowrap;  	
+ }
+.homepage_trusthost_label_margin{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: #000000;
+  	white-space: nowrap;
+  	margin-top: 15px;	
+ }
+.homepage_trusthost_label_Server{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: black;
+  	white-space: nowrap;
+ }
+ 
+
+.copyright {
+ 	font-family: Helvetica,Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #0064af;  	
+  	padding-bottom: 2px;
+ }
+
+.bottomCopyRight{
+ 	position: relative;
+ 	border: 2px solid #069
+ }
+.gwt-TabPanel{
+    background-color: #CCC;
+ }
+  .aboutWindow_ReleaseNotesl{
+	font-family: Tahoma,Arial;
+ 	font-size: 10pt;  
+  	color: #000000;
+  	padding-top: 6px;
+  	padding-left: 6px;
+  	cursor: pointer;
+  	white-space: nowrap;
+  	text-decoration: underline;
+	}
+	
+.x-grid3-col-message{
+	white-space: normal;	
+}
+
+ .exchange-icon { 
+    background: url(./images/exchange.gif) no-repeat center left !important;
+    cursor: default;
+    overflow: visible;
+ }
+ 
+ .sqlserver-icon { 
+    background: url(./images/database.gif) no-repeat center left !important;
+    cursor: default;
+    overflow: visible;
+ }
+ 
+ .x-grid3-col-name{
+ 	white-space:normal;
+ }
+
+
+.getting_started_subtitle{
+	font-weight: bold;
+    font-family: Tahoma,Arial;
+ 	font-size: 9pt; 
+}
+
+.getting_started_links{    
+    font-family: Tahoma,Arial;
+ 	font-size: 9pt; 	
+  	color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.getting_started_remoteURL{
+	font-weight: bold;
+    font-family: Tahoma,Arial;
+ 	font-size: 9pt; 
+ 	margin: 0px 0px 0px 5px;
+}
+
+ .backupSettingCenter{
+ 	background-color: white;
+ 	margin-left: 5px;
+ 	overflow-y:auto;
+    overflow-x:hidden;
+    height:100%;   
+ }
+
+.recoverypoint_noencryption_icon { 
+    background: url(./images/recoverypoint_noencryption.png) no-repeat center left !important;
+    overflow: visible;
+}
+.recoverypoint_encryption_icon { 
+    background: url(./images/recoverypoint_encryption.png) no-repeat center left !important;
+    overflow: visible;
+}
+
+.sql_server_writer_icon { 
+    background: url(./images/sqlserver_writer.gif) no-repeat center left !important;
+    cursor: default;
+    overflow: visible;
+}
+.sql_server_node_icon { 
+    background: url(./images/node_name.gif) no-repeat center left !important;
+    cursor: default;
+    overflow: visible;
+}
+.sql_server_icon { 
+    background: url(./images/sql_server.gif) no-repeat center left !important;
+    cursor: default;
+    overflow: visible;
+}
+.sql_server_database { 
+    background: url(./images/sqlserver_database.gif) no-repeat center left !important;
+    cursor: default;
+    overflow: visible;
+}
+.exchange_writer_icon { 
+    background: url(./images/exchange_writer.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_server_name_icon { 
+    background: url(./images/exchange_server.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_store_icon {
+    background: url(./images/exchange_store.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_node_icon { 
+    background: url(./images/node_name.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_storage_group_icon { 
+    background: url(./images/exchange_storage_group.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_mailbox_icon { 
+    background: url(./images/mailbox.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_publicfolder_icon { 
+    background: url(./images/mailbox.gif) no-repeat center left !important;
+    overflow: visible;
+}
+
+.exchange_grt_edb_icon { 
+    background: url(./images/ex_edb.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_calendar_icon { 
+    background: url(./images/ex_calendar.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_calendar_item_icon { 
+    background: url(./images/ex_calendar_item.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_contact_icon { 
+    background: url(./images/ex_contact.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_contact_item_icon { 
+    background: url(./images/ex_contact_item2.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_contact_group_icon { 
+    background: url(./images/ex_contact_group.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_draft_icon { 
+    background: url(./images/ex_draft.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_journal_icon { 
+    background: url(./images/ex_journal.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_notes_icon { 
+    background: url(./images/ex_note.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_tasks_icon { 
+    background: url(./images/ex_task.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_public_folder_icon { 
+    background: url(./images/ex_rootpublic.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_mailbox_icon { 
+    background: url(./images/ex_mailbox.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_deleted_icon { 
+    background: url(./images/ex_deleted.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_inbox_icon { 
+    background: url(./images/ex_inbox.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_outbox_icon { 
+    background: url(./images/ex_outbox.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_sent_items_icon { 
+    background: url(./images/ex_sent.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_folder_icon { 
+    background: url(./images/ex_userfolder.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_message_icon { 
+    background: url(./images/ex_mail.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_organization_icon { 
+    background: url(./images/ex_organization.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_server_icon { 
+    background: url(./images/ex_server.gif) no-repeat center left !important;
+    overflow: visible;
+}
+.exchange_grt_storage_group_icon { 
+    background: url(./images/ex_storagegroup.gif) no-repeat center left !important;
+    overflow: visible;
+}
+
+.sharepoint_grt_site_icon{
+	background: url(./images/sp_site.ico) no-repeat center left !important;
+    overflow: visible;
+}
+
+.sharepoint_grt_web_icon{
+	background: url(./images/sp_web.ico) no-repeat center left !important;
+    overflow: visible;
+}
+
+.sharepoint_grt_list_icon{
+	background: url(./images/sp_list.ico) no-repeat center left !important;
+    overflow: visible;
+}
+
+.sharepoint_grt_folder_icon{
+	background: url(./images/sp_folder.ico) no-repeat center left !important;
+    overflow: visible;
+}
+
+.sharepoint_grt_file_icon{
+	background: url(./images/sp_file.ico) no-repeat center left !important;
+    overflow: visible;
+}
+
+.sharepoint_grt_version_icon{
+	background: url(./images/sp_version.ico) no-repeat center left !important;
+    overflow: visible;
+}
+
+.active_directory_icon { 
+    background: url(./images/active_directory_db_16x16.png) no-repeat center left !important;
+    overflow: visible;
+}
+
+.ad_general_icon { 
+    background: url(./images/ad-general_16x16.png) no-repeat center left !important;
+    overflow: visible;
+}
+
+.ad_users_icon { 
+    background: url(./images/ad-users_16x16.png) no-repeat center left !important;
+    overflow: visible;
+}
+
+.ad_user_icon { 
+    background: url(./images/ad-user_16x16.png) no-repeat center left !important;
+    overflow: visible;
+}
+
+.ad_computer_icon { 
+    background: url(./images/ad_computer_16x16.png) no-repeat center left !important;
+    overflow: visible;
+}
+
+.ad_ou_icon { 
+    background: url(./images/ad-ou_16x16.png) no-repeat center left !important;
+    overflow: visible;
+}
+
+.warning_icon_small { 
+    background: url(./images/LogWarning.gif) no-repeat center left !important;
+    overflow: visible;
+}
+
+.rss {
+	border-width: 0px;
+	border-spacing: 2px;
+	border-style: solid solid solid solid;
+	border-color: gray gray gray gray;
+	border-collapse: separate;
+	background-color: white;
+}
+.rss th {
+	border-width: thin thin thin thin;
+	padding: 1px 1px 1px 1px;
+	border-style: none none none none;
+	border-color: gray gray gray gray;
+	background-color: white;
+}
+.rss td {
+	border-width: thin thin thin thin;
+	padding: 1px 1px 1px 1px;
+	border-style: none none none none;
+	border-color: gray gray gray gray;
+	background-color: white;	
+}
+
+.popupFolderText a,.popupFolderText a:link,.popupFolderText a:visited {
+	font-family: Tahoma,Arial;
+	font-size: 10pt;
+	color: #000000;
+	cursor: hand;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.popupFolderText a:hover {
+	color: #336699;
+	text-decoration: Underline;
+}
+
+.popupFileText {
+	font-family: Tahoma,Arial;
+	font-size: 10pt;
+	color: #000000;
+	white-space: nowrap;
+}
+
+.popupFolder-icon {
+	background: url(./images/folder.gif) no-repeat center left !important;
+	cursor: hand;
+	overflow: visible;
+}
+
+.popupFolder-icon-over {
+	background: url(./images/folder.gif) no-repeat center left !important;
+	cursor: hand;
+	overflow: visible;
+}
+
+.backupsetting_inner_panel{
+	height:95%!important;
+}
+
+.backupsetting_schedule_panel{
+	height:90%!important
+}
+
+.backupdest_piechart{
+	height:240px;
+	width:360px;
+}
+.sourceVolumesLayout{
+	margin-left: 20px;
+}
+
+.proxyTextFieldWidth{
+	width: 74%;
+}
+
+.mailServerTextFieldWidth{
+	width: 75%;
+}
+
+.rssDialogTitle {
+  font-family: Tahoma,Arial;
+  font-size: 16px;  
+  color: #000000;
+  margin: 5px;  
+  font-weight: bold;
+}
+
+.rssDialogDescription {
+  font-family: Tahoma,Arial;
+  font-size: 10pt;  
+  font-weight: bold;
+  color: #000000;
+  margin: 0px 0px 25px 0px;
+}
+
+.rssDialogItem {
+  cursor: pointer;
+  margin: 0px 0px 10px 0px;
+  font-family: Tahoma,Arial;
+  font-size: 12px;  
+  color: #000000;  
+}
+
+.rssAllFeeds {
+	cursor: pointer;
+ 	font-family: Tahoma,Arial;
+ 	font-size: 8pt;  
+  	color: #000000;  	  	
+ }
+ 
+ .FlashInstaller {
+	width:380px;
+	font-family: Tahoma,Arial;
+	font-size: 9pt; 
+	text-align: left;
+ }
+ 
+ .gettingStartVideo {
+ 	font-family: Tahoma,Arial;
+ 	font-size: 9pt; 	
+ }
+
+ .item-disabled {
+ 	cursor: default
+ }
+
+ .item-disabled * {
+	cursor: default !important;
+ }
+ 
+ .wizard_notes{
+  font-family: Tahoma,Arial;
+  font-size: 11px;
+  text-decoration: underline;
+  cursor:pointer;
+}
+.gwt-DisclosurePanel-network .header,
+.gwt-DisclosurePanel-network .header a,
+.gwt-DisclosurePanel-network .header td {
+  text-decoration: none;  /* Remove underline from header */
+  color: #575853;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Tahoma,Arial;
+  font-size: 9pt;
+  font-weight: bold;
+}
+.gwt-DisclosurePanel-network .content {
+  padding: 4px 0px 4px 8px;
+  margin-left: 6px;
+}
+
+.panel-text-label{
+	font-family: Tahoma,Arial;
+	font-size: 9pt;
+	padding-left: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #575853;
+	font-weight: bold;
+}
+
+.panel-text-value{
+	font-family: Tahoma,Arial;
+	font-size: 9pt;
+	padding-left: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.vcm-panel-text-value{
+	font-family: Tahoma,Arial;
+	font-size: 9pt;
+	padding-left: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.table_row{
+}
+
+.table_row_alternative{
+    background-color: #EFEFEF;
+}
+.coldStandbySettingTitle{
+	font-family: Tahoma,Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.coldStandbySettingDescription{
+	font-family: Tahoma,Arial;
+	font-size: 9pt;
+	padding-top: 2px;
+}
+
+.coldStandbySettingSummary{
+	font-family: Tahoma,Arial;
+	font-size: 9pt;
+	padding-top: 2px;
+	font-weight: bold;
+}
+.gwt-DisclosurePanel-coldStandby{
+	margin-top: 8px;
+}
+.gwt-DisclosurePanel-coldStandby .header, 
+.gwt-DisclosurePanel-coldStandby .header a,
+.gwt-DisclosurePanel-coldStandby .header td {
+	text-decoration: none;  /* Remove underline from header */
+	cursor: pointer;
+	cursor: hand;
+	font-family: Tahoma,Arial;
+	font-size: 9pt;
+	font-weight: bold;
+	background-color: #EFEFEF;
+	color: #000000;
+}
+.gwt-DisclosurePanel-coldStandby .content {
+	margin-top: 6px;
+	margin-left: 16px;
+	width:
+}
+
+.setting-text-label{
+	font-family: Tahoma,Arial;
+	font-size: 9pt;
+	padding-left: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 8px;
+}
+
+.setting-text-hint{
+	font-family: Tahoma,Arial;
+	font-size: 8pt;
+	color: grey;
+}
+
+/* Instruction Text */
+.instructionText{
+	border: 1px solid #7eb7e2;
+	background-color: #D3E6F6;
+	font-family: Tahoma,Arial;
+	font-size: 11px;
+}
+
+.instructionText_warning{
+	border: 1px solid #E7C743;
+	background-color: #FFEDA0;
+	font-family: Tahoma,Arial;
+	font-size: 11px;
+}
+
+.instructionText_error{
+	border: 1px solid #ECA600;
+	background-color: #FEE6C4;
+	font-family: Tahoma,Arial;
+	font-size: 11px;
+}
+
+/* Links */
+.link-data a{
+	font-family: Tahoma,Arial;
+	font-size: 11px;
+	color: #0064A0;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.link-system a{
+	font-family: Tahoma,Arial;
+	font-size: 11px;
+	color: #0064A0;
+	text-decoration: underline;
+	font-weight: bold;
+	cursor: pointer;
+}
+.link-global a{
+	font-family: Tahoma,Arial;
+	font-size: 11px;
+	color: #0064A0;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.link-footer a{
+	font-family: Tahoma,Arial;
+	font-size: 10px;
+	color: #0064A0;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* Page Subsection */
+.pageSubsection-title{
+	font-family: Tahoma,Arial;
+	font-size: 11px;
+	padding-left: 7px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+}
+.pageSubsection-header{
+	background: url(images/pageSubSection/subsectionPanelHeader.png);
+	border-style:solid;
+	border-width:1px;
+	border-color: #6E6E6E;
+}
+.pageSubsection-content{
+	border-left-style:solid;
+	border-left-width:1px;
+	border-left-color: #6E6E6E;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-right-color: #6E6E6E;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color: #6E6E6E;
+}
+
+.pageSubsection-content-nobottom{
+	border-left-style:solid;
+	border-left-width:1px;
+	border-left-color: #6E6E6E;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-right-color: #6E6E6E;
+}
+/* Tab Control */
+.tabControl-selected-left{
+	width: 26px;
+	height: 22px;
+	background: url(images/tab/tab_selected_left.png);
+}
+
+.tabControl-selected-most-left{
+	width: 7px;
+	height: 22px;
+	background: url(images/tab/tab_selected_most_left.png);
+}
+
+.tabControl-unselected-most-left{
+	width: 8px;
+	height: 22px;
+	background: url(images/tab/tab_unselected_most_left.png);
+}
+
+.tabControl-selected{
+	height: 22px;
+	background: url(images/tab/tab_selected_background.png) repeat;
+}
+
+.tabControl-selected-right{
+	height: 22px;
+	width: 26px;
+	background: url(images/tab/tab_selected_right.png);
+}
+
+.tabControl-selected-most-right{
+	height: 22px;
+	width: 31px;
+	background: url(images/tab/tab_selected_most_right.png);
+}
+
+.tabControl-unselected{
+	height: 22px;
+	background: url(images/tab/tab_unselected_background.png) repeat;
+}
+
+.tabControl-unselected-right{
+	width: 27px;
+	height: 22px;
+	background: url(images/tab/tab_unselected_right.png);
+}
+
+.tabControl-unselected-most-right{
+	width: 28px;
+	height: 22px;
+	background: url(images/tab/tab_unselected_most_right.png);
+}
+
+.tab_selected_title{
+	font-size: 12px;
+	font-family: Tahoma,Arial;
+	padding: 2px;
+	font-weight: bold;
+	white-space: nowrap;
+	height: 22px;
+}
+.tab_unselected_title{
+	font-size: 12px;
+	font-family: Tahoma,Arial;
+	padding: 2px;
+	cursor: pointer;
+  	cursor: hand;
+  	white-space: nowrap;
+  	height: 22px;
+}
+
+.tab_empty{
+	background: url(images/tab/empty.png) repeat;
+	height: 22px;
+}
+
+.tabControl-content{
+	border-bottom: 1px solid #6E6E6E;
+	border-left: 1px solid #6E6E6E;
+	border-right: 1px solid #6E6E6E;
+}
+
+.coldStandby-welcomeTitle{
+	font-family: Tahoma,Arial;
+	color: #004080;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.coldStandby-welcomeText{
+	font-family: Tahoma,Arial;
+	font-size: 12px;
+}
+
+.provisionPointsActionColumn{
+    font-family: Tahoma,Arial;
+    font-size: 11px;
+	color: #0064A0;
+  	cursor: pointer;
+  	text-decoration: underline;
+}
+.provisionPointsActionColumnHighligth{
+    font-family: Tahoma,Arial;
+    font-size: 11px;
+    font-weight: bold;
+	color: #0064A0;
+  	cursor: pointer;
+  	text-decoration: underline;
+}
+.x-window-dlg .ext-mb-warning-for-vcm {
+	background:transparent no-repeat top left;
+    background-image:url(./images/default/window/icon-warning.gif);
+    height:132px !important;
+}
+.x-window-dlg .ext-mb-warning-for-monitor {
+	background:transparent no-repeat top left;
+    background-image:url(./images/default/window/icon-warning.gif);
+    height:80px !important;
+}
+
+.x-window-dlg .ext-mb-warning-for-vsphere {
+	background:transparent no-repeat top left;
+    background-image:url(./images/default/window/icon-warning.gif);
+    height:80px !important;
+}
+
+.vcm-datastore-grid{
+	padding-left: 20px;
+}
+
+.provisionSubTitle {
+  font-family: Tahoma,Arial;
+  font-size: 10pt;  
+  font-weight: bold;
+}
+
+ .jobmonitor_window_jobname{
+	font-family: Tahoma,Arial;
+ 	font-size: 15px;  
+	font-weight: bold;
+  	color: #000000;
+  	padding-top: 2px;
+}
+
+.jobmonitor_window_label_column{
+  	width: 40%;
+  	text-aligh:left;
+}
+
+.jobmonitor_window_value_column{
+  	width: 40%;
+  	text-align:left;
+ }
+ .install_Wizard{
+  	    background-color:white;
+ }
+ 
+ .install_Wizard_Title{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 14pt;  
+	font-weight: bold;
+  	color: #006699;
+  	padding-top: 2px;
+  	padding-left: 8px;
+ }
+ 
+ .install_Wizard_Description{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 9pt;  
+	font-weight: normal;
+  	color: black;
+  	padding-left: 8px;
+  	padding-top: 3px;
+ }
+  
+   .install_Wizard_PatchDetails{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 9pt;  
+	font-weight: normal;
+  	color: black;
+ }
+  
+  .install_Wizard_SubTitle{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 9pt;  
+	font-weight: bold;
+  	color: black;
+  	padding-left: 8px;
+  	padding-top: 6px;
+ }
+ 
+.install_Wizard_PatchDetailsLink{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 9pt;  
+	font-weight: normal;
+  	color: black;
+  	cursor:  pointer;
+  	color:blue;
+  	text-decoration: underline;  	
+ }
+ 
+ .install_Wizard_HotfixDetailsLink{
+ 	font-family: Arial;
+ 	font-size: 12pt;  
+	font-weight: normal;
+  	color: #00ff00;
+  	cursor:  pointer;
+  	color:#00ff00;
+  	text-decoration: underline;  	
+ }
+ 
+ 
+ .Button_Borders {
+ border: none;
+ }
+ 
+ .gwt-MenuBar{
+	border: none;
+	font-family: Tahoma,Arial;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color:white;
+	text-decoration: underline;
+	cursor:  pointer;
+	margin :   0 auto;
+ }
+ 
+.gwt-MenuBar .gwt-MenuItem{
+	font-family: Tahoma,Arial;
+	font-size: 9pt;
+	font-weight: normal;
+	color:black;
+	cursor:  pointer;
+	text-decoration: none;
+	padding-left :   5px;
+ }
+ 
+ .WidgetPaddingLeft{
+ 	padding-left: 10px;
+ }
+  
+ .LoadingStatus{
+ border-width: thin thin thin thin;
+ border: none;
+ height: 30pt;
+ width: 100pt;
+ }
+ 
+ .TestingConnectionStatus{
+	 border: none;
+	 height: 8pt;
+	font-family: Tahoma,Arial;
+	font-size: 4pt;
+	font-weight: normal;
+ }
+ 
+ .HTTPProxyLayout
+ {
+  	padding: 8px;
+ }
+ 
+ .exchange_grt_header_of_importance { 
+    background: url(./images/header_of_importance.gif) no-repeat center center !important;
+    overflow: visible;
+}
+
+ .exchange_grt_header_of_icon { 
+    background: url(./images/header_of_icon.gif) no-repeat center center !important;
+    overflow: visible;
+}
+
+ .exchange_grt_header_of_attachment { 
+    background: url(./images/header_of_attachment.gif) no-repeat center left !important;
+    overflow: visible;
+}
+ 
+.exchange_grt_attachment { 
+    background: url(./images/attachment.gif) no-repeat center left !important;
+    overflow: visible;
+}
+
+.exchange_grt_high_importance { 
+    background: url(./images/high_importance.gif) no-repeat center left !important;
+    overflow: visible;
+}
+
+.exchange_grt_low_importance { 
+    background: url(./images/low_importance.gif) no-repeat center left !important;
+    overflow: visible;
+}
+
+.x-form-field-wrap .x-form-filter-trigger {
+	background-image: url(../images/filter-trigger.gif);
+	cursor: pointer;
+}
+
+.ConfigureCloudButton{
+	display: block;
+	font-family: Tahoma,Arial;
+	font-size: 16pt;
+	cursor: pointer;
+	padding-left: 28px;
+ }
+ 
+  .ArchiveSourceGrid{
+	display: block;
+	font-family: Tahoma,Arial;
+	font-size: 16pt;
+	padding-bottom: 5px;	
+ }
+ 
+ 
+ .WidgetPaddingLeft{
+ 	padding-botton: 15px;
+ }
+ 
+  .FilterWidgetPaddingLeft{
+ 	padding-botton: 10px;
+ }
+ 
+ .archiveRetentionLayout{
+ 	padding-left: 28px;
+ }
+ 
+  .Wizard_BackGround{
+  	    background-color:white;
+  	    padding-left: 10px;
+  	    padding-top: 5px;
+  	    padding-right: 10px;
+ }
+ 
+ .Preview_BackGround{
+ background-color:white;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-right: 10px;
+ }
+ 
+ .RestoreIntroLayout{
+	padding-left: 30px;
+	padding-top: 40px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+ }
+ 
+  .RestorePathLayoutStyle{
+	padding-left: 5px;
+	padding-top: 10px;
+	padding-right: 2px;
+ }
+ 
+ .ArchiveWarning{
+ font-family: Tahoma,Arial;
+ font-size:9px;
+ padding-left: 10px;
+ }
+ 
+ .ArchiveBrowsePanelStyles{
+ 	padding-top: 20px;
+ }
+ 
+  .ArchiveBrowseTreeStyles{
+ 	cursor: pointer;
+ 	font-family: Tahoma,Arial;
+ 	font-size:8px;
+ }
+ 
+ .ArchivePerformanceSlider{
+ 	padding-top: 20px;
+ 	padding-left:28px;
+ 	
+  	padding-bottom:8px;
+ }
+
+ .ArchivePolicyOptionStyle{
+ 	font-family: Tahoma,Arial;
+ 	font-size:13px;
+ 	cursor: pointer;
+ }
+
+ .ArchivePolicyTypeStyle{
+ 	padding-left:20px;
+ 	font-family: Tahoma,Arial;
+ 	font-size:12px;
+ }
+ 
+ .AutoUpdateConfigureProxy{
+	padding-left: 40px;
+ }
+ 
+  .DefaultIEProxyNote{
+  	padding-bottom: 5px;
+  	padding-left: 17px;
+  	font-family: Tahoma,Arial;
+ 	font-size: 12px;
+ }
+ .TaskOpacity {
+ 	opacity:0.6;
+ 	filter:alpha(opacity=40);
+ 	cursor:default;
+ }
+
+ .labelSelectedNumber{
+  	font-weight: bold;
+ 	background-color: #FFFFCC;
+ }
+ 
+ .vcm_provision_points_image{
+ 	padding: 0px 4px 0px 4px;
+ }
+
+ .resource-pool-icon { 
+ 	background: url(./images/resource_pool.gif) no-repeat center left !important;
+	cursor: default;
+	overflow: visible;
+ }
+ 
+ .navigation-button-over {
+	 background-color:#8accff;
+	 cursor: hand;
+ }
+ 
+ .navigation-background {
+ 	 position: relative;
+	 background-color:#ebeff2;
+ }
+
+
+ .homepage_banner_background {
+ 	background:transparent repeat-x top left;
+    background-image:url(images/5.0/homepage_header_background.png);
+ }
+ 
+ .homepage_banner_label_server{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+ 	color: #c3d2eb;
+  	white-space: nowrap;
+ }
+ 
+ .homepage_banner_link_addserver{
+	padding-left: 4px;
+	font-family: Tahoma,Arial;
+ 	font-size: 10pt;  
+ 	color: #c3d2eb;
+ 	cursor: pointer;
+ 	text-decoration: underline;
+ 	white-space: nowrap;
+}
+
+.homepage_managing_server_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 
+ 	font-weight:bold;	
+  	color: #708494;
+  	white-space: nowrap;
+ }
+ 
+ .homepage_header_user_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: #202a36;
+  	white-space: nowrap;  	
+  	padding: 0 8 0 2;
+ }
+ 
+ .homepage_header_warning_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: #202a36;
+  	padding: 0 8 0 2;
+ }
+ 
+  .homepage_header_hyperlink_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: #52729c;
+  	cursor: pointer;
+  	white-space: nowrap;  	
+  	text-decoration: underline;
+  	padding: 0 8 0 2;
+ }
+ 
+  .homepage_header_helplink_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: #52729c;
+  	cursor: pointer;
+  	white-space: nowrap;  	
+  	text-decoration: underline;
+  	padding: 0 3 0 2;
+ }
+ 
+  .homepage_header_allfeeds_link_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color: #52729c;
+  	cursor: pointer;
+  	white-space: nowrap;  	
+  	text-decoration: underline;
+  	padding: 0 3 0 2;
+ }
+ 
+ .homepage_NewUpdates_Description_Link{
+  	color: #52729c;
+  	cursor: pointer;
+  	white-space: nowrap;  	
+  	text-decoration: underline;
+ }
+ .homepage_BackupSets_Description_Link{
+  	color: #52729c;
+  	cursor: pointer;
+  	white-space: nowrap;  	
+  	text-decoration: underline;
+  	font-size: 8pt;
+  	font-family: Tahoma,Arial;
+  	padding-left: 10px;
+  	padding-top: 2px;
+  	padding-bottom:2px;
+ }
+ 
+ .homepage_Manual_Merge_Link{
+  	color: #ff0000;
+  	cursor: pointer;
+  	white-space: nowrap;  	
+  	text-decoration: underline;
+  	font-size: 8pt;
+  	font-family: Tahoma,Arial;
+  	padding-left: 10px;
+  	padding-top: 2px;
+  	padding-bottom:2px;
+ }
+ 
+ .mount_volume_label_icon {
+	background: url(./images/mount_volume.png) no-repeat left center !important;
+    overflow: visible;
+    height: 16px;
+    padding-left: 18px;
+    padding-right: 1px;
+}
+ .dismount_volume_label_icon {
+	background: url(./images/dismount16.png) no-repeat left center !important;
+	overflow: visible;
+	height: 16px;
+	padding-left: 18px;
+	padding-right: 1px;
+ }
+  .mount_volume_dest_not_accessible_icon {
+	background: url(./images/mount_dest_error.png) no-repeat left center !important;
+	overflow: visible;
+	height: 16px;
+	padding-left: 18px;
+	padding-right: 1px;
+ }
+ .mount_volume_label_ellipsis{
+ 	 white-space: nowrap;       
+     overflow: hidden;
+     -o-text-overflow: ellipsis;  
+     text-overflow: ellipsis;
+ }
+ 
+ .mount_DisclosurePanel {
+  	margin-top: 5px;
+ }
+ .mount_DisclosurePanel .content {
+    margin-left: 16px !important;
+    margin-top: 3px !important;
+}
+ .mount_recovery_point {
+    color: #000000;
+    font-weight: bold;
+    padding: 0px 3px 3px 0px !important;
+}
+ .mount_panel_vm_notice{
+    padding: 0px 0px 0px 5px !important;
+}
+.backupSetStartDate a{
+	background-image:url(./images/datePickerRecoverySetStart.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+ .schedule_item_lable{
+	color: #000000;
+  	font:bold 12px Tahoma,Arial;
+ }
+ .schedule_item_icon_ff{
+ 	height: 16px;
+    left: 0px !important;
+    position: absolute;
+    top: -2px !important;
+    width: 16px;
+ }
+  .homepage_header_hyperlink_label_disable{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 10pt; 	
+  	color:  #969696 !important;
+  	white-space: nowrap;
+  	text-decoration: underline;
+  	padding: 0 8 0 2;
+ }
+
+.schedule_item_text_align {
+	text-align: left !important;
+    padding-left: 18px !important;
+}
+.schedule_grid .x-grid3-scroller{
+	height: 75px !important;
+}
+.schedule_grid .x-grid3-cell-inner{
+	overflow: hidden !important;
+}
+.schedule_grid.x-grid3-hd-inner{
+	overflow: visible !important;
+}
+.schedule_time_text {
+    background-color: #99BBE8;
+}
+.schedule_time_label {
+    background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    color: #1C94C4;
+    cursor: pointer;
+    font-family: Tahoma,Arial;
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    text-align: center;
+}
+.schedule_time_label_active {
+    background-color: #F7F7F7;
+    border: 1px solid #FBD850;
+    color: #EB8F00;
+    cursor: pointer;
+    font-family: Tahoma,Arial;
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    text-align: center;
+}
+.schedule_repeatfield_td{
+	padding-right:18px;
+}
+.schedule_time_line{
+	border-top:1px solid #cccccc;
+	height: 1px;
+	overflow:hidden;
+	margin-bottom:1px;
+	margin-top:1px;
+}
+.update_rps_policy_loading_label{
+ 	font-family: Tahoma,Arial;
+ 	font-size: 9pt;  
+	font-weight: normal;
+  	color: #000000;
+  	padding-left: 5px;
+}
+
+.grid_col_cb{	
+	height:23px !important;
+}
+
+.login_productName_container {
+	background: #38304c url(images/5.0/agent_login_header.png) no-repeat;
+	position: absolute !important;
+	left: 250px !important;
+	top: 232px !important;
+	width: 423px;
+    height:47px;
+}
+.login_form_container {
+	position:absolute !important;
+	left:340px !important;
+	top:299px !important;
+}
+
+.login_container{
+	width:100%;
+	height:100%;
+}
+
+.login_form {
+	width:100%;
+}
+
+div.x-item-disabled {
+    cursor: default;
+    opacity: 1.0 !important;
+}
+
+table.x-item-disabled {
+    cursor: default;
+    opacity: 0.6 !important;
+}
+
+
+.x-toolbar .x-btn button {
+	margin: 0 !important;
+}
+
+.celleditor_fileloc{
+	height:26px !important;
+}
+
+.ext-strict .ext-gecko .x-edit-grid .x-small-editor .x-form-text {
+    height: 26px !important;
+}
+
+.about_productName_container { background: url(images/5.0/about.png) no-repeat;
+    height: 120px;
+    width: auto;
+}
+.nce-panel{
+	background-color: #0066aa !important;
+	padding: 4px;
+	font-family: Arial, Sans Serif;
+  	color: #ffffff;
+  	font-size: 12px;
+}
+
+.nce-btn{
+	margin-top: 10px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 0;
+	background-color: #fff;
+	width: auto;
+	font-family: Tahoma,Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #1f5b98 !important;
+	
+}
+
+.nce-icon{
+	margin-left:  6px;
+    margin-right: 6px;
+    margin-top:   6px;
+}

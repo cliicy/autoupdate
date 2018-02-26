@@ -1,0 +1,7 @@
+9.0
+5
+1       SQLINT        0       4       ""   1     ID                         ""
+2       SQLINT        0       4       ""   2     EmailID                    ""
+3       SQLINT        1       4       ""   3     ReportID                   ""
+4       SQLNCHAR      2       2048    ""   4     ReportParam                SQL_Latin1_General_CP1_CI_AS
+5       SQLINT        0       4       ""   5     branchid                   ""

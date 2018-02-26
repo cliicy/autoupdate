@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include=".%255cd2dproxy">
+      <UniqueIdentifier>{6f9d1027-48f0-405c-874b-3a2513e0463e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".%255cd2dproxy\..%255cinclude%255cd2dcallback">
+      <UniqueIdentifier>{d93372a6-7e9c-40cc-a53e-15c10ac1af38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="romotevcm-extern">
+      <UniqueIdentifier>{70995a52-721c-4045-9cd6-36e0ceea8f35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyCrypto">
+      <UniqueIdentifier>{36e61e5a-2886-4f20-9f68-db1e09630d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUpdateDNSTool">
+      <UniqueIdentifier>{6734099a-ee6b-427a-9018-982d51241f5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AFCoreAPIInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Catalog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FacadeVMWareMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GRTMntManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HAClientWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperVRepCallBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JNIConv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualConversion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Native_ASAG_CRC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeFacadeForHyperV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VMwareCallback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d2dproxy\D2DIPCItem.cpp">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClCompile>
+    <ClCompile Include="d2dproxy\D2DProxyImpl.cpp">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClCompile>
+    <ClCompile Include="IniDefine.cpp">
+      <Filter>romotevcm-extern</Filter>
+    </ClCompile>
+    <ClCompile Include="rvcm_save_network_mapping_to_file.cpp">
+      <Filter>romotevcm-extern</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCrypto\CNGAPIWrapper.cpp">
+      <Filter>MyCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCrypto\CryptoCAPIWrapperImp.cpp">
+      <Filter>MyCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCrypto\CryptoCNGWrapperImp.cpp">
+      <Filter>MyCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCrypto\CryptoCommon.cpp">
+      <Filter>MyCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCrypto\CryptoWrapFactory.cpp">
+      <Filter>MyCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCrypto\CXMLFileMgr.cpp">
+      <Filter>MyCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCrypto\EncryptPassword.cpp">
+      <Filter>MyCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCrypto\EncryptString.cpp">
+      <Filter>MyCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="MyUpdateDNSTool\UpdateDNSTool.cpp">
+      <Filter>MyUpdateDNSTool</Filter>
+    </ClCompile>
+    <ClCompile Include="MyUpdateDNSTool\DebugLog-UpdateDNSTool.cpp">
+      <Filter>MyUpdateDNSTool</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyFileTree.cpp">
+      <Filter>MyUpdateDNSTool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\h\d2dcallback\Basecodec.cpp">
+      <Filter>.%255cd2dproxy\..%255cinclude%255cd2dcallback</Filter>
+    </ClCompile>
+    <ClCompile Include="d2dproxy\TaskLicense.cpp">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClCompile>
+    <ClCompile Include="d2dproxy\WMIService.cpp">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClCompile>
+	<ClCompile Include="d2dproxy\ClusterMonitor.cpp">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClCompile>
+    <ClCompile Include="AppADBrowse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserImpersonateHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="com_ca_arcflash_webservice_jni_WSJNI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="com_ca_ha_webservice_jni_HyperVJNI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="com_ca_ha_webservice_jni_VMWareJNI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FacadeVMWareMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GRTMntManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HAClientWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperVRepCallBack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JNIConv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Native_ASAG_CRC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeFacade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VMwareCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dproxy\D2DIPCItem.h">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dproxy\D2DProxyImpl.h">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dproxy\id2dproxydef.h">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dproxy\iunknown.h">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dproxy\pxypublic.h">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="IniDefine.h">
+      <Filter>romotevcm-extern</Filter>
+    </ClInclude>
+    <ClInclude Include="rvcm_save_network_mapping_to_file.h">
+      <Filter>romotevcm-extern</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\CNGAPIWrapper.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\CryptoCAPIWrapperImp.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\CryptoCNGWrapperImp.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\CryptoCommon.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\CryptoDefine.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\CryptoSynchUtility.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\CXMLFileMgr.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\D2DCryptoError.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\D2DErrorCode.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\EncryptPassword.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\EncryptString.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto\ICryptoWrapperInterface.h">
+      <Filter>MyCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="MyUpdateDNSTool\UpdateDNSTool.h">
+      <Filter>MyUpdateDNSTool</Filter>
+    </ClInclude>
+    <ClInclude Include="MyUpdateDNSTool\DebugLog-UpdateDNSTool.h">
+      <Filter>MyUpdateDNSTool</Filter>
+    </ClInclude>
+    <ClInclude Include="CopyFileTree.h">
+      <Filter>MyUpdateDNSTool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\h\d2dcallback\Basecodec.h">
+      <Filter>.%255cd2dproxy\..%255cinclude%255cd2dcallback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\h\d2dcallback\d2dproxyiDef.h">
+      <Filter>.%255cd2dproxy\..%255cinclude%255cd2dcallback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\h\d2dcallback\SigForD2Dcallback.h">
+      <Filter>.%255cd2dproxy\..%255cinclude%255cd2dcallback</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dproxy\TaskLicense.h">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\H\d2dcallback\chklicFuncSignature.h">
+      <Filter>.%255cd2dproxy\..%255cinclude%255cd2dcallback</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dproxy\WMIService.h">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dproxy\ClusterMonitor.h">
+      <Filter>.%255cd2dproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="UserImpersonateHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NativeFacade.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

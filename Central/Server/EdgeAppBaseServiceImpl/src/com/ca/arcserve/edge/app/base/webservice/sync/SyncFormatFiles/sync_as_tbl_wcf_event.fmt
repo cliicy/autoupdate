@@ -1,0 +1,9 @@
+9.0
+7
+1       SQLINT        0       4       ""   1     ID                       ""
+2       SQLINT        0       4       ""   2     NodeID                   ""
+3       SQLNCHAR      2       100     ""   3     Action                   SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR       4       0       ""   4     Source                   SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR       4       0       ""   5     Target                   SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME   0       8       ""   6     InsertDate               ""
+7       SQLINT        0       4       ""   7     branchid                 ""

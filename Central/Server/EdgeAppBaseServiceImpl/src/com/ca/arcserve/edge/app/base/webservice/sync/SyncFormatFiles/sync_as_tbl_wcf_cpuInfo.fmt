@@ -1,0 +1,19 @@
+9.0
+17
+1       SQLINT        0       4       ""   1     ID                             ""
+2       SQLINT        0       4       ""   2     NodeID                         ""
+3       SQLINT        0       4       ""   3     AddressWidth                   ""
+4       SQLINT        0       4       ""   4     Architecture                   ""
+5       SQLINT        0       4       ""   5     Availability                   ""
+6       SQLINT        0       4       ""   6     DataWidth                      ""
+7       SQLNCHAR      2       1024    ""   7     DeviceID                       SQL_Latin1_General_CP1_CI_AS
+8       SQLINT        0       4       ""   8     Family                         ""
+9       SQLINT        0       4       ""   9     L2CacheSize                    ""
+10      SQLNCHAR      2       1024    ""   10    Manufacturer                   SQL_Latin1_General_CP1_CI_AS
+11      SQLINT        0       4       ""   11    MaxClockSpeed                  ""
+12      SQLNCHAR      2       1024    ""   12    Name                           SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR      2       100     ""   13    ProcessorId                    SQL_Latin1_General_CP1_CI_AS
+14      SQLINT        0       4       ""   14    ProcessorType                  ""
+15      SQLNCHAR      2       4096    ""   15    RawData                        SQL_Latin1_General_CP1_CI_AS
+16      SQLDATETIME   0       8       ""   16    LastUpdate                     ""
+17      SQLINT        0       4       ""   17    branchid                       ""

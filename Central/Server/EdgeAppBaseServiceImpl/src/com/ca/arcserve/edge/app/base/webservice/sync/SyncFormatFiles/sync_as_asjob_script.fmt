@@ -1,0 +1,9 @@
+9.0
+7
+1       SQLINT        0       4       ""   1     jobid                          ""
+2       SQLINT        0       4       ""   2     parentjobid                    ""
+3       SQLINT        0       4       ""   3     masterjobid                    ""
+4       SQLINT        0       4       ""   4     flag                           ""
+5       SQLINT        0       4       ""   5     jobscriptsize                  ""
+6       SQLIMAGE      4       0       ""   6     jobscript                      ""
+7       SQLINT        0       4       ""   7     branchid                       ""

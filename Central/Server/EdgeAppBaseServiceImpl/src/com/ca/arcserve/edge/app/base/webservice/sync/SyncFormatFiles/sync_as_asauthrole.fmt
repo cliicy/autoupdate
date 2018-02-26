@@ -1,0 +1,9 @@
+9.0
+7
+1       SQLINT        0       4       ""   1     id                         ""
+2       SQLNCHAR      2       512     ""   2     name                       SQL_Latin1_General_CP1_CI_AS
+3       SQLINT        0       4       ""   3     type                       ""
+4       SQLBINARY     2       256     ""   4     permbits                   ""
+5       SQLBINARY     2       256     ""   5     checkbits                  ""
+6       SQLNCHAR      2       512     ""   6     description                SQL_Latin1_General_CP1_CI_AS
+7       SQLINT        0       4       ""   7     branchid                   ""

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FlashServiceContract"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EdgebaseDllLoader"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/AFJobScript"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RPSServiceContract"/>
+	<classpathentry kind="lib" path="/ExternalLib/quartz/quartz-2.2.1.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ARCserveLinuxImagingContract"/>
+	<classpathentry kind="lib" path="/ExternalLib/asbu-contract.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.utility"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_66">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/EdgeCommon"/>
+	<classpathentry kind="lib" path="/ExternalLib/log4j/log4j-1.2.15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,6 @@
+9.0
+4
+1       SQLINT        0       4       ""   1     DBIndex                  ""
+2       SQLNCHAR      2       256     ""   2     DBName                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       512     ""   3     ServerName               SQL_Latin1_General_CP1_CI_AS
+4       SQLINT        0       4       ""   4     branchid                 ""

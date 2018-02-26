@@ -1,0 +1,5 @@
+9.0
+3
+1       SQLUNIQUEID   1       16      ""   1     groupguid              ""
+2       SQLINT        0       4       ""   2     rhostid                ""
+3       SQLINT        0       4       ""   3     branchid               ""

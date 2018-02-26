@@ -1,0 +1,7 @@
+9.0
+5
+1       SQLINT        0       4       ""   1     commonjobid                ""
+2       SQLINT        0       4       ""   2     jobnum                     ""
+3       SQLDATETIME   1       8       ""   3     expireddate                ""
+4       SQLINT        1       4       ""   4     remindFreq                 ""
+5       SQLINT        0       4       ""   5     branchid                   ""

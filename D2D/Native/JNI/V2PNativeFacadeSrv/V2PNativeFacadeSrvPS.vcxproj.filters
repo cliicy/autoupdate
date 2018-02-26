@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{76fb1272-1a16-4f67-859b-48cb27f8e861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{0e21b9e9-f035-4800-ac25-27ae2a30d66f}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="V2PNativeFacadeSrvps.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(Platform)\dlldata.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(Platform)\V2PNativeFacadeSrv_i.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(Platform)\V2PNativeFacadeSrv_p.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="V2PNativeFacadeSrvPS.rc" />
+  </ItemGroup>
+</Project>

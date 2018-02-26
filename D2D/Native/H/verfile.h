@@ -1,0 +1,30 @@
+#define PRODUCT_VERSION_MAJOR 5 
+#define PRODUCT_VERSION_MINOR 0 
+#define PRODUCT_VERSION_STR "5.0" 
+#define PRODUCT_NAME_STR "arcserve Unified Data Protection" 
+#define PRODUCT_TYPE_SHORT "UDP" 
+#define FILE_PROPERTY_VERSION_MAJOR r5 
+#define FILE_PROPERTY_VERSION_MINOR 0 
+#define FILE_PROPERTY_VERSION_STR "r5.0" 
+ 
+#undef COPYRIGHT_STR 
+#define COPYRIGHT_STR "Copyright 2014 Arcserve\0" 
+ 
+#undef BUILD 
+#define BUILD 1746 
+#undef BUILD_STR 
+#define BUILD_STR "1746" 
+ 
+#undef ECN 
+#define ECN 0 
+#undef ECN_STR 
+#define ECN_STR "0" 
+ 
+#undef BUILD_DATE_STR 
+#define BUILD_DATE_STR "Mon 01/06/2014" 
+#undef VERSION_FILENAME 
+#define VERSION_FILENAME "ARCFLASHVOLDRVINSTALL.EXE" 
+#undef VERSION_BLOCK 
+#define VERSION_BLOCK "040904E4" 
+#undef VERSION_TRANSLATION 
+#define VERSION_TRANSLATION 0x0409, 0x04E4 

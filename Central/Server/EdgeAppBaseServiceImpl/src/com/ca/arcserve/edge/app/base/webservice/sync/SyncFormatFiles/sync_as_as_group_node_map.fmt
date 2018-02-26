@@ -1,0 +1,7 @@
+9.0
+5
+1       SQLINT        0       4       ""   1     id                   ""
+2       SQLNCHAR      2       128     ""   2     grpname              SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID   1       16      ""   3     nodeguid             ""
+4       SQLSMALLINT   0       2       ""   4     status               ""
+5       SQLINT        0       4       ""   5     branchid             ""

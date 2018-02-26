@@ -1,0 +1,8 @@
+9.0
+6
+1       SQLBIGINT     0       8       ""   1     sid                            ""
+2       SQLNCHAR      2       1024    ""   2     sname                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       128     ""   3     scenariotype                   SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR      2       512     ""   4     masterserver                   SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR      2       512     ""   5     replicaserver                  SQL_Latin1_General_CP1_CI_AS
+6       SQLINT        0       4       ""   6     branchid                       ""

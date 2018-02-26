@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WebServiceImpl">
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+ 
+        <dependent-module archiveName="flash-common-service-lib.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/CommonServiceLib/CommonServiceLib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="flash-listener.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ARCFlashListener/ARCFlashListener">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Common.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Common/Common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/RPSServiceContract/RPSServiceContract">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/FlashServiceContract/FlashServiceContract">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/quartz/quartz-2.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/Apache/commons-collections-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/Apache/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AFJob.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AFJob/AFJob">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="VMwareManager.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/VMwareManager/VMwareManager">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AFJobScript.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AFJobScript/AFJobScript">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="saaj-impl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/saaj-impl.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="management-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/management-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail-1.4.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxmail/mail-1.4.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="woodstox-core-asl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/woodstox-core-asl.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="streambuffer.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/streambuffer.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-impl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/jaxb-impl.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FastInfoset.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/FastInfoset.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr181-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/jsr181-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="saaj-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/saaj-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ha-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/ha-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxws-rt.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/jaxws-rt.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.15.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/log4j/log4j-1.2.15.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="policy.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/policy.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.annotation.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/javax.annotation.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gmbal-api-only.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/gmbal-api-only.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stax-ex.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/stax-ex.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stax2-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/stax2-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mimepull.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/mimepull.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aspectjrt.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/aspectj/lib/aspectjrt.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/asm-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-core-asl-1.9.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jackson-core-asl-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-jaxrs-1.9.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jackson-jaxrs-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-mapper-asl-1.9.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jackson-mapper-asl-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-xc-1.9.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jackson-xc-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-client-1.17.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jersey-client-1.17.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-core-1.17.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jersey-core-1.17.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+         <dependent-module archiveName="jersey-json-1.17.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jersey-json-1.17.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+         <dependent-module archiveName="jersey-server-1.17.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jersey-server-1.17.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-servlet-1.17.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jersey-servlet-1.17.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+         <dependent-module archiveName="jettison-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jettison-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr311-api-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jsr311-api-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/quartz/slf4j-api-1.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+     
+        <property name="context-root" value="WebServiceImpl"/>
+        <property name="java-output-path"/>
+    </wb-module>
+</project-modules>

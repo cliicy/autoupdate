@@ -1,0 +1,15 @@
+9.0
+13
+1       SQLINT        0       4       ""   1     id                                           ""
+2       SQLNCHAR      2       510     ""   2     hostname                                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       8       ""   3     volume                                       SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR      2       520     ""   4     rootpath                                     SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME   0       8       ""   5     lastsessionbegintime                         ""
+6       SQLBIGINT     0       8       ""   6     lastsessionsize                              ""
+7       SQLBIGINT     0       8       ""   7     filenumber                                   ""
+8       SQLBIGINT     0       8       ""   8     filesize                                     ""
+9       SQLINT        0       4       ""   9     filedurationyear                             ""
+10      SQLINT        0       4       ""   10    filedurationmonth                            ""
+11      SQLDATETIME   0       8       ""   11    policyupdatetime                             ""
+12      SQLDATETIME   0       8       ""   12    lastupdate                                   ""
+13      SQLINT        0       4       ""   13    branchid                                     ""

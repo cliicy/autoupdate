@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CloudVendors>
+	<CloudVendor VendorType="0" VendorID="0" VendorURL="s3.amazonaws.com"/>
+	<CloudVendor VendorType="1" VendorID="1" VendorURL="https://blob.core.windows.net"/>
+        <CloudVendor VendorType="1" VendorID="2" VendorURL="https://blob.core.windows.net"/>
+        <CloudVendor VendorType="5" VendorID="5" VendorURL=""/>
+</CloudVendors>

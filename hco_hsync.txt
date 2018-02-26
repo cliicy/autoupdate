@@ -1,0 +1,12 @@
+e:\tfs_works\UDP_3792>hsync -b cscr501 -en ARCserve -sy -purge all -st Snapshot -ss "Oolong_Alpha 3792.0"  -vp "\ARCserve" -cp . -usr luoji03 -o h3720.log
+
+
+
+how to fix the compiler error about "'DOMDocument60' : is not a member of 'MSXML2'and 'DOMDocument60' : undeclared"
+Such kind of errors are related to the version of VS2015
+1.copy the older msxml3.dll from the build machine which can compile the projects successfully into certain folder of the current compiling machine, for example: e:\document60_xml
+2. run the cmdline below:
+set path=%~dp0;%path%
+start "" "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
+
+Here, the folder document60_xml includes all of the resouces to fix the compile error. Please get it from git server.

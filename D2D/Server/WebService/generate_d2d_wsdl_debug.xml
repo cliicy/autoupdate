@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CentralApps" default="build" basedir=".">
+
+	<property name="dir.externalLib" value="..\..\..\ExternalLib" />
+	<property name="dir.output" value="${basedir}" />
+	<property name="dir.d2d" value="..\..\Server" />
+	
+	<property name="aspectj" value="${dir.externalLib}/aspectj/lib/aspectjrt.jar"/>
+	<property name="quartz" value="${dir.externalLib}/quartz/quartz-2.2.1.jar"/>
+	<property name="servlet" value="${dir.externalLib}/Tomcat/apache-tomcat/lib/servlet-api.jar"/>
+	<property name="afjob" value="${dir.d2d}/VCM/AFJob/bin"/>
+	<property name="afjobscript" value="${dir.d2d}/VCM/AFJobScript/bin"/>
+	<property name="common" value="${dir.d2d}/Common/bin"/>
+	<property name="contract" value="${dir.d2d}/WebServiceContract/bin"/>
+	<property name="serviceimpl" value="${dir.d2d}/WebService/bin"/>
+	<property name="vmwaremanager" value="${dir.d2d}/VMwareManager/bin"/>
+
+	<property name="d2d.serviceimpl.class" value="com.ca.arcflash.webservice.FlashServiceImpl"/>	
+	<property name="d2d.service.name" value="{http://webservice.arcflash.ca.com}FlashServiceImpl"/>
+	<property name="d2d.port.name" value="{http://webservice.arcflash.ca.com}FlashServiceImplHttpSoap11Endpoint"/>
+
+	<property name="wsgen.d2d.classpath" value="${aspectj};${quartz};${servlet};${afjob};${afjobscript};${common};${contract};${serviceimpl};${vmwaremanager}"/>
+	
+	<property name="result.dir" value="${dir.d2d}/WebServiceContract/src/com/ca/arcflash/webservice" />
+	
+	<target name="build" depends="generate_d2d_wsdl, copytocontact"/>
+	 
+	<path id="wsgen.main.classpath">
+		<pathelement location="${dir.externalLib}/jaxws/lib/jaxws-tools.jar"/>
+		<pathelement location="${dir.externalLib}/jaxws/lib/jaxb-xjc.jar"/>
+	</path>	
+		
+	<target name="generate_d2d_wsdl">
+		<delete dir="${dir.output}\wsdl"/>
+		<mkdir dir="${dir.output}\wsdl"/>    
+		<java classname="com.sun.tools.ws.WsGen">
+         <arg value="-d"/>
+		 <arg value="${dir.output}\wsdl"/>
+		 <arg value="-r"/>
+		 <arg value="${dir.output}\wsdl"/>
+		 <arg value="-verbose"/>	
+		 <arg value="-cp"/>
+		 <arg value="${wsgen.d2d.classpath}"/>
+		 <arg value="${d2d.serviceimpl.class}"/>
+		 <arg value="-wsdl"/>
+		 <arg value="-inlineSchemas"/>
+		 <arg value="-servicename"/>
+		 <arg value="${d2d.service.name}"/>
+		 <arg value="-portname"/>
+		 <arg value="${d2d.port.name}"/>
+         <classpath refid="wsgen.main.classpath"/>
+		</java>
+	</target>
+	
+			
+	<target name="copytocontact">
+		<copy includeemptydirs="false" todir="${result.dir}" force="true">			
+			<fileset dir="${dir.output}/wsdl/" includes="*.wsdl" />		
+		</copy>
+	</target>
+
+</project>

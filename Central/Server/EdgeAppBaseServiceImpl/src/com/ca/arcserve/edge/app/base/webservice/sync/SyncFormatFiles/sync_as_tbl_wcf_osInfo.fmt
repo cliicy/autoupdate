@@ -1,0 +1,25 @@
+9.0
+23
+1       SQLINT        0       4       ""   1     ID                                                 ""
+2       SQLINT        0       4       ""   2     nodeID                                             ""
+3       SQLINT        0       4       ""   3     BuildNumber                                        ""
+4       SQLNCHAR      2       256     ""   4     BuildType                                          SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR      2       1024    ""   5     Caption                                            SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR      2       256     ""   6     CountryCode                                        SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR      2       256     ""   7     CSDVersion                                         SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR      2       512     ""   8     CSName                                             SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR      2       1024    ""   9     Manufacturer                                       SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR      2       1024    ""   10    OEMInfo                                            SQL_Latin1_General_CP1_CI_AS
+11      SQLINT        0       4       ""   11    OSLanguage                                         ""
+12      SQLINT        0       4       ""   12    ProductType                                        ""
+13      SQLNCHAR      2       256     ""   13    SerialNumber                                       SQL_Latin1_General_CP1_CI_AS
+14      SQLINT        0       4       ""   14    ServicePackMajorVersion                            ""
+15      SQLINT        0       4       ""   15    ServicePackMinorVersion                            ""
+16      SQLNCHAR      2       256     ""   16    SystemDevice                                       SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR      2       512     ""   17    SystemDirectory                                    SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR      2       100     ""   18    SystemDrive                                        SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR      2       100     ""   19    Version                                            SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR      2       1024    ""   20    WindowsDirectory                                   SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR      2       4096    ""   21    RawData                                            SQL_Latin1_General_CP1_CI_AS
+22      SQLDATETIME   0       8       ""   22    LastUpdate                                         ""
+23      SQLINT        0       4       ""   23    branchid                                           ""

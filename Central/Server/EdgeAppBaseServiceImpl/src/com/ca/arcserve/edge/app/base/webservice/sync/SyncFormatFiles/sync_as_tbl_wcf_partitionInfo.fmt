@@ -1,0 +1,15 @@
+9.0
+13
+1       SQLINT        0       4       ""   1     ID                                   ""
+2       SQLINT        0       4       ""   2     NodeID                               ""
+3       SQLINT        0       4       ""   3     diskID                               ""
+4       SQLBIGINT     0       8       ""   4     BlockSize                            ""
+5       SQLBIT        1       1       ""   5     BootPartition                        ""
+6       SQLNCHAR      2       1024    ""   6     Name                                 SQL_Latin1_General_CP1_CI_AS
+7       SQLBIGINT     0       8       ""   7     NumberOfBlocks                       ""
+8       SQLBIT        1       1       ""   8     PrimaryPartition                     ""
+9       SQLBIGINT     0       8       ""   9     Size                                 ""
+10      SQLNCHAR      2       1024    ""   10    Type                                 SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR      2       4096    ""   11    RawData                              SQL_Latin1_General_CP1_CI_AS
+12      SQLDATETIME   0       8       ""   12    LastUpdate                           ""
+13      SQLINT        0       4       ""   13    branchid                             ""

@@ -1,0 +1,24 @@
+LIBRARY	"ARCSetupSvc"
+
+EXPORTS;
+	IsWindowsFirewallStarted
+	WindowsFirewallRemove
+	WindowsFirewallAdd
+	IsWindowsFirewallAdded
+	WFCOMGetCurrentProfile
+	IsWFCOMPermission
+	
+	StartSpecService
+	StopSpecService
+	IsServiceStopped
+	IsServiceStarted
+	GetServiceFileName
+	IsServiceExist
+	ChangeServiceDisplayName
+	ChangeServiceDescription
+	ChangeSvcFailureActions
+	ChangeSvcStartType
+	RemoveService
+	ChangeServiceFailAction
+	SetServiceStartType
+	

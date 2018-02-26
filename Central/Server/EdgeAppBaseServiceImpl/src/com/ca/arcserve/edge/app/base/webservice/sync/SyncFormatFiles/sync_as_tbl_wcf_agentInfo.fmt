@@ -1,0 +1,14 @@
+9.0
+12
+1       SQLINT        0       4       ""   1     ID                           ""
+2       SQLINT        0       4       ""   2     NodeID                       ""
+3       SQLNCHAR      2       256     ""   3     AgentName                    SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR      2       520     ""   4     Path                         SQL_Latin1_General_CP1_CI_AS
+5       SQLINT        0       4       ""   5     MajorVersion                 ""
+6       SQLINT        0       4       ""   6     MinorVersion                 ""
+7       SQLINT        0       4       ""   7     BuildVersion                 ""
+8       SQLINT        0       4       ""   8     Revision                     ""
+9       SQLINT        0       4       ""   9     PortNumber                   ""
+10      SQLNCHAR      2       6144    ""   10    RawData                      SQL_Latin1_General_CP1_CI_AS
+11      SQLDATETIME   0       8       ""   11    LastUpdate                   ""
+12      SQLINT        0       4       ""   12    branchid                     ""

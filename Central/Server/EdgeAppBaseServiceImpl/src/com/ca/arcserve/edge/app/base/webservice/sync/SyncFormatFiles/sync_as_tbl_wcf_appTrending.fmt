@@ -1,0 +1,13 @@
+9.0
+11
+1       SQLINT        0       4       ""   1     id                           ""
+2       SQLNCHAR      2       128     ""   2     rhostName                    SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       510     ""   3     nodeName                     SQL_Latin1_General_CP1_CI_AS
+4       SQLINT        0       4       ""   4     categoryID                   ""
+5       SQLINT        0       4       ""   5     majorVersion                 ""
+6       SQLINT        0       4       ""   6     minorVersion                 ""
+7       SQLNCHAR      2       510     ""   7     instanceName                 SQL_Latin1_General_CP1_CI_AS
+8       SQLBIGINT     0       8       ""   8     size                         ""
+9       SQLSMALLINT   0       2       ""   9     datetype                     ""
+10      SQLDATETIME   0       8       ""   10    updatetime                   ""
+11      SQLINT        0       4       ""   11    branchid                     ""

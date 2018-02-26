@@ -1,0 +1,10 @@
+9.0
+8
+1       SQLBIGINT     0       8       ""   1     sid                                  ""
+2       SQLNCHAR      2       1024    ""   2     sname                                SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       128     ""   3     sRepStatus                           SQL_Latin1_General_CP1_CI_AS
+4       SQLINT        1       4       ""   4     lastBackupStatus                     ""
+5       SQLDATETIME   1       8       ""   5     lastBackupTime                       ""
+6       SQLINT        0       4       ""   6     xmlsize                              ""
+7       SQLIMAGE      4       0       ""   7     xml                                  ""
+8       SQLINT        0       4       ""   8     branchid                             ""

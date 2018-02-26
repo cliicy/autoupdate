@@ -1,0 +1,32 @@
+ARCserve\ExternalLib\Tomcat8\apache-tomcat-8.0.28
+
+1.
+how to debug into FlashServiceImpl.java:
+added "
+-Xdebug 
+-Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n-Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"  into the regedit Options:
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun 2.0\CASAD2DWebSvc\Parameters\Java]
+
+-Dcatalina.base=C:\Program Files\Arcserve\Unified Data Protection\Engine\TOMCAT
+-Dcatalina.home=C:\Program Files\Arcserve\Unified Data Protection\Engine\TOMCAT
+-Djava.endorsed.dirs=C:\Program Files\Arcserve\Unified Data Protection\Engine\TOMCAT\endorsed
+-Djava.io.tmpdir=C:\Program Files\Arcserve\Unified Data Protection\Engine\TOMCAT\temp
+-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+-Djava.util.logging.config.file=C:\Program Files\Arcserve\Unified Data Protection\Engine\TOMCAT\conf\logging.properties
+-XX:+UseParallelOldGC
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:MinHeapFreeRatio=10
+-XX:MaxHeapFreeRatio=10
+-Dlog4j.ignoreTCL=true
+-Xdebug 
+-Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n
+
+2.
+copy compiled FlashServiceImpl.wsdl into the installation path: 
+C:\Program Files\Arcserve\Unified Data Protection\Engine\TOMCAT\webapps\WebServiceImpl\WEB-INF\wsdl
+
+3.
+Since new added interface function are under FlashServiceImpl, so 
+after compiling of java, export the jar files flash-webservice-contract.jar and flash-webservice-impl.jar
+into C:\Program Files\Arcserve\Unified Data Protection\Engine\TOMCAT\webapps\WebServiceImpl\WEB-INF\lib\
+

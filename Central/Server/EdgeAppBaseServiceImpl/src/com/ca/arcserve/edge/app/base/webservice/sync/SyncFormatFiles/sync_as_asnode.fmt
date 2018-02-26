@@ -1,0 +1,18 @@
+9.0
+16
+1       SQLDATETIME   0       8       ""   1     schtime                            ""
+2       SQLDATETIME   0       8       ""   2     exectime                           ""
+3       SQLINT        1       4       ""   3     jobno                              ""
+4       SQLINT        1       4       ""   4     commonjobid                        ""
+5       SQLINT        1       4       ""   5     masterjobid                        ""
+6       SQLCHAR       2       64      ""   6     nodename                           SQL_Latin1_General_CP1_CI_AS
+7       SQLINT        1       4       ""   7     status                             ""
+8       SQLINT        1       4       ""   8     bkmethod                           ""
+9       SQLINT        1       4       ""   9     jobtype                            ""
+10      SQLTINYINT    1       1       ""   10    isFullySelected                    ""
+11      SQLTINYINT    1       1       ""   11    DRBackup                           ""
+12      SQLINT        1       4       ""   12    MajorVersion                       ""
+13      SQLINT        1       4       ""   13    MinorVersion                       ""
+14      SQLINT        1       4       ""   14    ServicePack                        ""
+15      SQLUNIQUEID   1       16      ""   15    guid                               ""
+16      SQLINT        0       4       ""   16    branchid                           ""

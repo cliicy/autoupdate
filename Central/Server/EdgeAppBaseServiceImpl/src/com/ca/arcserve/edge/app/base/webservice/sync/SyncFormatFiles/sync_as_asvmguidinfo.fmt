@@ -1,0 +1,7 @@
+9.0
+5
+1       SQLNCHAR      2       512     ""   1     vmname                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR      2       128     ""   2     ipaddress              SQL_Latin1_General_CP1_CI_AS
+3       SQLBINARY     2       128     ""   3     guid                   ""
+4       SQLSMALLINT   1       2       ""   4     vmtype                 ""
+5       SQLINT        0       4       ""   5     branchid               ""

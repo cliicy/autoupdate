@@ -1,0 +1,26 @@
+9.0
+24
+1       SQLINT        0       4       ""   1     scheduleid                   ""
+2       SQLINT        0       4       ""   2     fromvaultid                  ""
+3       SQLINT        0       4       ""   3     tovaultid                    ""
+4       SQLINT        0       4       ""   4     fromrotation                 ""
+5       SQLINT        0       4       ""   5     torotation                   ""
+6       SQLDATETIME   0       8       ""   6     timedate                     ""
+7       SQLCHAR       0       24      ""   7     medianame                    SQL_Latin1_General_CP1_CI_AS
+8       SQLINT        0       4       ""   8     randomid                     ""
+9       SQLINT        0       4       ""   9     seqnum                       ""
+10      SQLINT        0       4       ""   10    raidid                       ""
+11      SQLINT        0       4       ""   11    tapeid                       ""
+12      SQLCHAR       0       32      ""   12    serialno                     SQL_Latin1_General_CP1_CI_AS
+13      SQLCHAR       0       24      ""   13    tapeuuid                     SQL_Latin1_General_CP1_CI_AS
+14      SQLSMALLINT   0       2       ""   14    slotcnt                      ""
+15      SQLSMALLINT   0       2       ""   15    bexport                      ""
+16      SQLSMALLINT   0       2       ""   16    mediaclass                   ""
+17      SQLSMALLINT   0       2       ""   17    mediatype                    ""
+18      SQLSMALLINT   0       2       ""   18    status                       ""
+19      SQLCHAR       0       40      ""   19    dbname                       SQL_Latin1_General_CP1_CI_AS
+20      SQLINT        0       4       ""   20    fromslotnum                  ""
+21      SQLINT        0       4       ""   21    toslotnum                    ""
+22      SQLINT        1       4       ""   22    reserved                     ""
+23      SQLINT        1       4       ""   23    reserved1                    ""
+24      SQLINT        0       4       ""   24    branchid                     ""

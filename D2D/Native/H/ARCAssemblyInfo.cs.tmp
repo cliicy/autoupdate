@@ -1,0 +1,26 @@
+﻿using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyCompany("Arcserve")]
+[assembly: AssemblyProduct("arcserve Unified Data Protection")]
+[assembly: AssemblyCopyright("Copyright © Arcserve 2014")]
+[assembly: AssemblyTrademark("")]
+
+
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+[assembly: AssemblyVersion("5.0.{ADD98522-9D4F-42C9-8441-EB553A5AFD3B}.{F0B42E0B-E32E-40EB-B86D-8BFCD3420A8B}")]
+[assembly: AssemblyFileVersion("5.0.{ADD98522-9D4F-42C9-8441-EB553A5AFD3B}.{F0B42E0B-E32E-40EB-B86D-8BFCD3420A8B}")]
+[assembly: AssemblyInformationalVersion("r5.0")]

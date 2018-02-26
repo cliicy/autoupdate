@@ -1,0 +1,23 @@
+9.0
+21
+1       SQLINT        0       4       ""   1     id                         ""
+2       SQLINT        1       4       ""   2     padding                    ""
+3       SQLINT        0       4       ""   3     vaultid                    ""
+4       SQLINT        0       4       ""   4     scheduleid                 ""
+5       SQLCHAR       0       255     ""   5     descript                   SQL_Latin1_General_CP1_CI_AS
+6       SQLINT        0       4       ""   6     sequence                   ""
+7       SQLINT        0       4       ""   7     retholddays                ""
+8       SQLINT        0       4       ""   8     retcycle                   ""
+9       SQLINT        0       4       ""   9     retcreat                   ""
+10      SQLSMALLINT   0       2       ""   10    retperm                    ""
+11      SQLSMALLINT   0       2       ""   11    retexpir                   ""
+12      SQLDATETIME   0       8       ""   12    retdate                    ""
+13      SQLDATETIME   0       8       ""   13    cdate                      ""
+14      SQLDATETIME   0       8       ""   14    ldate                      ""
+15      SQLCHAR       0       32      ""   15    cuserid                    SQL_Latin1_General_CP1_CI_AS
+16      SQLCHAR       0       32      ""   16    luserid                    SQL_Latin1_General_CP1_CI_AS
+17      SQLINT        1       4       ""   17    reserved                   ""
+18      SQLINT        1       4       ""   18    reserved1                  ""
+19      SQLINT        1       4       ""   19    reserved2                  ""
+20      SQLINT        1       4       ""   20    reserved3                  ""
+21      SQLINT        0       4       ""   21    branchid                   ""

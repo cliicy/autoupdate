@@ -1,0 +1,26 @@
+9.0
+24
+1       SQLINT        0       4       ""   1     ID                                                           ""
+2       SQLINT        0       4       ""   2     partitionID                                                  ""
+3       SQLINT        0       4       ""   3     volumeID                                                     ""
+4       SQLINT        0       4       ""   4     nodeID                                                       ""
+5       SQLNCHAR      2       100     ""   5     Caption                                                      SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT        1       1       ""   6     Compressed                                                   ""
+7       SQLNCHAR      2       1024    ""   7     Description                                                  SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR      2       1024    ""   8     DeviceID                                                     SQL_Latin1_General_CP1_CI_AS
+9       SQLINT        0       4       ""   9     DriveType                                                    ""
+10      SQLNCHAR      2       100     ""   10    FileSystem                                                   SQL_Latin1_General_CP1_CI_AS
+11      SQLBIGINT     0       8       ""   11    FreeSpace                                                    ""
+12      SQLINT        0       4       ""   12    MaximumComponentLength                                       ""
+13      SQLINT        0       4       ""   13    MediaType                                                    ""
+14      SQLNCHAR      2       1024    ""   14    Name                                                         SQL_Latin1_General_CP1_CI_AS
+15      SQLBIT        1       1       ""   15    QuotasDisabled                                               ""
+16      SQLBIT        1       1       ""   16    QuotasIncomplete                                             ""
+17      SQLBIT        1       1       ""   17    QuotasRebuilding                                             ""
+18      SQLBIGINT     0       8       ""   18    Size                                                         ""
+19      SQLBIT        1       1       ""   19    SupportsDiskQuotas                                           ""
+20      SQLBIT        1       1       ""   20    SupportsFileBasedCompression                                 ""
+21      SQLNCHAR      2       1024    ""   21    VolumeName                                                   SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR      2       4096    ""   22    RawData                                                      SQL_Latin1_General_CP1_CI_AS
+23      SQLDATETIME   0       8       ""   23    LastUpdate                                                   ""
+24      SQLINT        0       4       ""   24    branchid                                                     ""

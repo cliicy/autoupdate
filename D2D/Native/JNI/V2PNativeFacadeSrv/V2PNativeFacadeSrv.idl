@@ -1,0 +1,39 @@
+// V2PNativeFacadeSrv.idl : IDL source for V2PNativeFacadeSrv
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (V2PNativeFacadeSrv.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(7CC04C2F-02D7-4169-AE37-E17E710323EB),
+	pointer_default(unique)
+]
+interface ICNativeCmdCtrl : IUnknown{
+	HRESULT Initialize();
+	HRESULT UnInitialize();
+	HRESULT RPC_Invoke([in] unsigned long inputCmd, [in] BSTR inputData, [out] unsigned long* outputValue, [out] BSTR* outputData);
+	HRESULT GetServerInfo([out] unsigned long* processId, [out] unsigned long* threadId);
+	HRESULT SetClientInfo([in] LONG cid, [in] BSTR cinfo);
+    HRESULT readStream([in] long long llOffset, [in] int lengthToRead, [out] [size_is(lengthToRead)] byte* stream, [out] int* lengthRead, [out] int* ret);
+};
+
+[
+	uuid(9D2569A0-4140-4317-897F-124C3CD527E4),
+	version(1.0),
+]
+library V2PNativeFacadeSrvLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(8A0C12EF-1BB5-4B75-AF87-D70DA5E63FB3)		
+	]
+	coclass CNativeCmdCtrl
+	{
+		[default] interface ICNativeCmdCtrl;
+	};
+};
+

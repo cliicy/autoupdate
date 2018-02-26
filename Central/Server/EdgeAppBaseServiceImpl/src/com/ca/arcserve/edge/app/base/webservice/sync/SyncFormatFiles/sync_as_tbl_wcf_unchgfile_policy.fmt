@@ -1,0 +1,7 @@
+9.0
+5
+1       SQLINT        0       4       ""   1     id                           ""
+2       SQLNCHAR      2       510     ""   2     hostname                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       520     ""   3     excludedpath                 SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME   0       8       ""   4     updatetime                   ""
+5       SQLINT        0       4       ""   5     branchid                     ""

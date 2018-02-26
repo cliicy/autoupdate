@@ -1,0 +1,20 @@
+9.0
+18
+1       SQLINT        0       4       ""   1     id                       ""
+2       SQLINT        0       4       ""   2     scheduleid               ""
+3       SQLSMALLINT   0       2       ""   3     vcdtype                  ""
+4       SQLSMALLINT   0       2       ""   4     sepdsn                   ""
+5       SQLSMALLINT   0       2       ""   5     sepjob                   ""
+6       SQLSMALLINT   0       2       ""   6     abend                    ""
+7       SQLDATETIME   0       8       ""   7     cdate                    ""
+8       SQLDATETIME   0       8       ""   8     ldate                    ""
+9       SQLCHAR       0       32      ""   9     cuserid                  SQL_Latin1_General_CP1_CI_AS
+10      SQLCHAR       0       32      ""   10    luserid                  SQL_Latin1_General_CP1_CI_AS
+11      SQLCHAR       0       32      ""   11    mediapool                SQL_Latin1_General_CP1_CI_AS
+12      SQLCHAR       0       32      ""   12    dbname                   SQL_Latin1_General_CP1_CI_AS
+13      SQLCHAR       0       64      ""   13    nodename                 SQL_Latin1_General_CP1_CI_AS
+14      SQLCHAR       0       255     ""   14    filename                 SQL_Latin1_General_CP1_CI_AS
+15      SQLCHAR       0       80      ""   15    cprogram                 SQL_Latin1_General_CP1_CI_AS
+16      SQLINT        1       4       ""   16    reserved                 ""
+17      SQLINT        1       4       ""   17    reserved1                ""
+18      SQLINT        0       4       ""   18    branchid                 ""

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Policys>
+	<RetryPolicy JobTypeName="Backup" Enabled="true" FailedEnabled="true"
+		Immediately="false" MaxTimes="1" MissedEnabled="true" NearToNextEvent="15"
+		TimeToWait="10" />
+	<RetryPolicy JobTypeName="Catalog" Enabled="true" FailedEnabled="true"
+		Immediately="false" MaxTimes="1" NearToNextEvent="15" TimeToWait="15" />
+	<RetryPolicy JobTypeName="FileCopy" Enabled="true" FailedEnabled="true"
+		Immediately="false" MaxTimes="1" TimeToWait="30" />
+	<RetryPolicy JobTypeName="FileArchive" Enabled="true" FailedEnabled="true"
+		Immediately="false" MaxTimes="1" TimeToWait="30" />
+</Policys>

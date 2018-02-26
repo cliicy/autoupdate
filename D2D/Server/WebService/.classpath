@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/*.sig" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FlashServiceContract"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/VMwareManager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/AFJob"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/AFJobScript"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Common"/>
+	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ARCFlashListener"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CommonServiceLib"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RPSServiceContract"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/VCloudManager"/>
+	<classpathentry kind="lib" path="/ExternalLib/activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/AERPClient.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/java-json.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/jersey-bundle-1.19.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/jersey-client-1.19.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/jersey-core-1.19.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/mail-1.4.5.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jackson-jaxrs-1.9.2.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/jaxrs/jersey-archive-1.17.1/lib/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/jaxws/lib/jaxws-rt.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/jaxmail/mail-1.4.3.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/log4j/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/ExternalLib/quartz/quartz-2.2.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web;#system#"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_66">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

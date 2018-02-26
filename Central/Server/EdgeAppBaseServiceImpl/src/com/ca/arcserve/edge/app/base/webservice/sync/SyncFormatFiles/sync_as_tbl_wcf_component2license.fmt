@@ -1,0 +1,12 @@
+9.0
+10
+1       SQLINT        0       4       ""   1     topologyId                         ""
+2       SQLINT        0       4       ""   2     componentId                        ""
+3       SQLINT        0       4       ""   3     majorVersion                       ""
+4       SQLINT        0       4       ""   4     minorVersion                       ""
+5       SQLINT        0       4       ""   5     totalLicenses                      ""
+6       SQLINT        0       4       ""   6     usedLicenses                       ""
+7       SQLINT        0       4       ""   7     unusedLicenses                     ""
+8       SQLINT        0       4       ""   8     minLicensesNeed                    ""
+9       SQLDATETIME   0       8       ""   9     lastUpdate                         ""
+10      SQLINT        0       4       ""   10    branchid                           ""

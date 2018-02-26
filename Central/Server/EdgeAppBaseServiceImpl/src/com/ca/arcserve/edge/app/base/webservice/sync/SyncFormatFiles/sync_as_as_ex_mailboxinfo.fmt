@@ -1,0 +1,8 @@
+9.0
+6
+1       SQLNCHAR      2       512     ""   1     Exuser               SQL_Latin1_General_CP1_CI_AS
+2       SQLDATETIME   1       8       ""   2     ExDate               ""
+3       SQLINT        0       4       ""   3     DBIndex              ""
+4       SQLINT        1       4       ""   4     jobid                ""
+5       SQLSMALLINT   1       2       ""   5     jobtype              ""
+6       SQLINT        0       4       ""   6     branchid             ""

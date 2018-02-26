@@ -1,0 +1,21 @@
+LIBRARY "ARCUpdate"
+
+EXPORTS
+	CheckUpdate				@001
+	TestConnection			@002
+	IsUpdateBusy			@003
+	GetUpdateStatusXmlFile	@004
+	InstallUpdate			@005
+	GetUpdateErrorMessage	@006
+	GetUpdateSettingsFile	@007
+	DisableAutoUpdate		@008
+	QueryUpdateStatus		@009
+	GetLastAvailableUpdate  @010
+	AUCancelUpdateJob		@011
+	SaveUpdateServerInfo	@012
+	IsUpdateServiceRunning  @013
+	TestBIConnection		@014
+	GetBIUpdateStatusXmlFile @015
+	InstallBIUpdate			@016
+	CheckBIUpdate			@017
+

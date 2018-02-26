@@ -1,0 +1,25 @@
+9.0
+23
+1       SQLINT              0       4       ""   1     id                                 ""
+2       SQLINT              1       4       ""   2     jobid                              ""
+3       SQLDATETIME         1       8       ""   3     logtime                            ""
+4       SQLINT              1       4       ""   4     sessid                             ""
+5       SQLINT              1       4       ""   5     moduleid                           ""
+6       SQLNCHAR            2       128     ""   6     serverhost                         SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       128     ""   7     agenthost                          SQL_Latin1_General_CP1_CI_AS
+8       SQLINT              1       4       ""   8     agenttype                          ""
+9       SQLINT              1       4       ""   9     msgtextid                          ""
+10      SQLNCHAR            2       2048    ""   10    msgtext                            SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       128     ""   11    username                           SQL_Latin1_General_CP1_CI_AS
+12      SQLINT              1       4       ""   12    alertbitmap                        ""
+13      SQLINT              1       4       ""   13    resourceclassid                    ""
+14      SQLINT              1       4       ""   14    action                             ""
+15      SQLNCHAR            2       128     ""   15    resourcename                       SQL_Latin1_General_CP1_CI_AS
+16      SQLINT              1       4       ""   16    actionresult                       ""
+17      SQLNCHAR            2       48      ""   17    attrtype                           SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       48      ""   18    attrvalue                          SQL_Latin1_General_CP1_CI_AS
+19      SQLINT              1       4       ""   19    msgtypeid                          ""
+20      SQLINT              1       4       ""   20    severity                           ""
+21      SQLINT              1       4       ""   21    destid                             ""
+22      SQLNCHAR            2       128     ""   22    grpname                            SQL_Latin1_General_CP1_CI_AS
+23      SQLINT              0       4       ""   23    branchid                           ""

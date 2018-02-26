@@ -1,0 +1,11 @@
+9.0
+9
+1       SQLINT        0       4       ""   1     id                               ""
+2       SQLINT        0       4       ""   2     alertType                        ""
+3       SQLNCHAR      2       510     ""   3     nodeName                         SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME   0       8       ""   4     happenTime                       ""
+5       SQLINT        0       4       ""   5     threshold                        ""
+6       SQLINT        0       4       ""   6     ActualPKIValue                   ""
+7       SQLNCHAR      2       1024    ""   7     alertMsg                         SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME   0       8       ""   8     updateTime                       ""
+9       SQLINT        0       4       ""   9     branchid                         ""

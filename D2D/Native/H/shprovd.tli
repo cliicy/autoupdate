@@ -1,0 +1,626 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.50727.762 (2d684c99).
+//
+// C:\Users\ZOUYU0~1.TAN\AppData\Local\Temp\shprovd.tli
+//
+// Wrapper implementations for Win32 type library ..\LIB\X86\ShProvd.tlb
+// compiler-generated file created 04/16/12 at 10:33:38 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IBrowseObj wrapper method implementations
+//
+
+inline _bstr_t IBrowseObj::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline enum _ObjectType IBrowseObj::GetObjectType ( ) {
+    enum _ObjectType _result;
+    HRESULT _hr = get_ObjectType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IEnumBrowseObjList wrapper method implementations
+//
+
+inline HRESULT IEnumBrowseObjList::Next ( unsigned long celt, struct IBrowseObj * * rgelt, unsigned long * pceltFetched ) {
+    HRESULT _hr = raw_Next(celt, rgelt, pceltFetched);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IEnumBrowseObjList::Skip ( unsigned long celt ) {
+    HRESULT _hr = raw_Skip(celt);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IEnumBrowseObjList::Reset ( ) {
+    HRESULT _hr = raw_Reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IEnumBrowseObjList::Clone ( struct IEnumBrowseObjList * * ppenum ) {
+    HRESULT _hr = raw_Clone(ppenum);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IVDBrowserProvider wrapper method implementations
+//
+
+inline IEnumBrowseObjListPtr IVDBrowserProvider::EnumObjectFromMountPoint ( _bstr_t SessionFolder, _bstr_t RelativePath ) {
+    struct IEnumBrowseObjList * _result = 0;
+    HRESULT _hr = raw_EnumObjectFromMountPoint(SessionFolder, RelativePath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IEnumBrowseObjListPtr(_result, false);
+}
+
+inline HRESULT IVDBrowserProvider::EnumObjectFromMountPointEx ( _bstr_t SessionFolder, _bstr_t RelativePath, _bstr_t MountTo, unsigned long uType, BSTR * ppsMountTo ) {
+    HRESULT _hr = raw_EnumObjectFromMountPointEx(SessionFolder, RelativePath, MountTo, uType, ppsMountTo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IEnumBrowseObjListPtr IVDBrowserProvider::EnumObjectFromMDF ( _bstr_t SessionFolder, _bstr_t MDFRelativePath, GUID ID, enum _ObjectType ObjType ) {
+    struct IEnumBrowseObjList * _result = 0;
+    HRESULT _hr = raw_EnumObjectFromMDF(SessionFolder, MDFRelativePath, ID, ObjType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IEnumBrowseObjListPtr(_result, false);
+}
+
+inline IEnumBrowseObjListPtr IVDBrowserProvider::EnumObjectFromEDB ( _bstr_t SessionFolder, _bstr_t EDBRelativePath, _bstr_t EDBObjectID, enum _ObjectType ObjType ) {
+    struct IEnumBrowseObjList * _result = 0;
+    HRESULT _hr = raw_EnumObjectFromEDB(SessionFolder, EDBRelativePath, EDBObjectID, ObjType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IEnumBrowseObjListPtr(_result, false);
+}
+
+inline IEnumBrowseObjListPtr IVDBrowserProvider::EnumObjectFromExchangeWriterCatalog ( _bstr_t SessionFolder, _bstr_t ExchangeWriterName, unsigned long LongNameID ) {
+    struct IEnumBrowseObjList * _result = 0;
+    HRESULT _hr = raw_EnumObjectFromExchangeWriterCatalog(SessionFolder, ExchangeWriterName, LongNameID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IEnumBrowseObjListPtr(_result, false);
+}
+
+inline IEnumBrowseObjListPtr IVDBrowserProvider::EnumObjectFromExchangeEDBCatalog ( _bstr_t SessionFolder, _bstr_t ExchangeWriterName, unsigned long LongNameID, long lselfid, long hselfid ) {
+    struct IEnumBrowseObjList * _result = 0;
+    HRESULT _hr = raw_EnumObjectFromExchangeEDBCatalog(SessionFolder, ExchangeWriterName, LongNameID, lselfid, hselfid, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IEnumBrowseObjListPtr(_result, false);
+}
+
+inline HRESULT IVDBrowserProvider::D2DMountDisk ( _bstr_t strSessPath, _bstr_t strVolGUID, _bstr_t strMountTo, _bstr_t strUserName, _bstr_t strPWD, _bstr_t strSessPWD, BSTR * strSignature, unsigned int * pRetVal ) {
+    HRESULT _hr = raw_D2DMountDisk(strSessPath, strVolGUID, strMountTo, strUserName, strPWD, strSessPWD, strSignature, pRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVDBrowserProvider::D2DDisMountDisk ( _bstr_t strSignature, unsigned int * pRetVal ) {
+    HRESULT _hr = raw_D2DDisMountDisk(strSignature, pRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVDBrowserProvider::D2DCancelTask ( _bstr_t strSessPath, _bstr_t strVolGUID, _bstr_t strMountTo, unsigned int * pRetVal ) {
+    HRESULT _hr = raw_D2DCancelTask(strSessPath, strVolGUID, strMountTo, pRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVDBrowserProvider::QueryMountedItemInfo ( _bstr_t pszSignature, BSTR * ppsXMLbuf, unsigned int * pRetVal ) {
+    HRESULT _hr = raw_QueryMountedItemInfo(pszSignature, ppsXMLbuf, pRetVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IVirtualDiskControl wrapper method implementations
+//
+
+inline HRESULT IVirtualDiskControl::MountVHD ( _bstr_t VhdName, long PartitionNum, BSTR * MountPointPath ) {
+    HRESULT _hr = raw_MountVHD(VhdName, PartitionNum, MountPointPath);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVirtualDiskControl::DisMountAll ( ) {
+    HRESULT _hr = raw_DisMountAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IBrowseObjectFile wrapper method implementations
+//
+
+inline unsigned __int64 IBrowseObjectFile::GetSize ( ) {
+    unsigned __int64 _result = 0;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline struct _SYSTEMTIME IBrowseObjectFile::GetLastWriteTime ( ) {
+    struct _SYSTEMTIME _result;
+    HRESULT _hr = get_LastWriteTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline struct _SYSTEMTIME IBrowseObjectFile::GetLastAccessTime ( ) {
+    struct _SYSTEMTIME _result;
+    HRESULT _hr = get_LastAccessTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline struct _SYSTEMTIME IBrowseObjectFile::GetCreationTime ( ) {
+    struct _SYSTEMTIME _result;
+    HRESULT _hr = get_CreationTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned long IBrowseObjectFile::GetFileAttributes ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_FileAttributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBrowseObjectVolume wrapper method implementations
+//
+
+inline unsigned __int64 IBrowseObjectVolume::GetSize ( ) {
+    unsigned __int64 _result = 0;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IBrowseObjectVolume::GetHasSubFolder ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_HasSubFolder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned __int64 IBrowseObjectVolume::GetFreeSize ( ) {
+    unsigned __int64 _result = 0;
+    HRESULT _hr = get_FreeSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBrowseObjectFolder wrapper method implementations
+//
+
+inline VARIANT_BOOL IBrowseObjectFolder::GetHasSubFolder ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_HasSubFolder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline struct _SYSTEMTIME IBrowseObjectFolder::GetLastWriteTime ( ) {
+    struct _SYSTEMTIME _result;
+    HRESULT _hr = get_LastWriteTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline struct _SYSTEMTIME IBrowseObjectFolder::GetLastAccessTime ( ) {
+    struct _SYSTEMTIME _result;
+    HRESULT _hr = get_LastAccessTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline struct _SYSTEMTIME IBrowseObjectFolder::GetCreationTime ( ) {
+    struct _SYSTEMTIME _result;
+    HRESULT _hr = get_CreationTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned long IBrowseObjectFolder::GetFileAttributes ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_FileAttributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBrowseSPSGranularSite wrapper method implementations
+//
+
+inline GUID IBrowseSPSGranularSite::GetSharePointID ( ) {
+    GUID _result;
+    HRESULT _hr = get_SharePointID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IBrowseSPSGranularSite::GetTitle ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Title(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IBrowseSPSGranularSite::GetFullUrl ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FullUrl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IBrowseSPSGranularList wrapper method implementations
+//
+
+inline GUID IBrowseSPSGranularList::GetSharePointID ( ) {
+    GUID _result;
+    HRESULT _hr = get_SharePointID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IBrowseSPSGranularList::GetTitle ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Title(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline unsigned long IBrowseSPSGranularList::GetFlags ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_Flags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBrowseSPSGranularFolder wrapper method implementations
+//
+
+inline GUID IBrowseSPSGranularFolder::GetSharePointID ( ) {
+    GUID _result;
+    HRESULT _hr = get_SharePointID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBrowseSPSGranularDoc wrapper method implementations
+//
+
+inline GUID IBrowseSPSGranularDoc::GetSharePointID ( ) {
+    GUID _result;
+    HRESULT _hr = get_SharePointID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned __int64 IBrowseSPSGranularDoc::GetSize ( ) {
+    unsigned __int64 _result = 0;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned long IBrowseSPSGranularDoc::GetVersion ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_Version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBrowseEDBGranularMailBox wrapper method implementations
+//
+
+inline _bstr_t IBrowseEDBGranularMailBox::GetExchangeObjectID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchangeObjectID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IBrowseEDBGranularFolder wrapper method implementations
+//
+
+inline _bstr_t IBrowseEDBGranularFolder::GetExchangeObjectID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchangeObjectID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IBrowseEDBGranularMessage wrapper method implementations
+//
+
+inline _bstr_t IBrowseEDBGranularMessage::GetExchangeObjectID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchangeObjectID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline unsigned __int64 IBrowseEDBGranularMessage::GetSize ( ) {
+    unsigned __int64 _result = 0;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IRecoveryDataStream wrapper method implementations
+//
+
+inline HRESULT IRecoveryDataStream::Seek ( unsigned __int64 dlibMove, unsigned long dwOrigin, unsigned __int64 * plibNewPosition ) {
+    HRESULT _hr = raw_Seek(dlibMove, dwOrigin, plibNewPosition);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IRecoveryDataStream::Read ( unsigned char * pv, unsigned long cb, unsigned long * pcbRead ) {
+    HRESULT _hr = raw_Read(pv, cb, pcbRead);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IRecoveryDataStream::GetRealFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RealFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IRecoveryProvider wrapper method implementations
+//
+
+inline IRecoveryDataStreamPtr IRecoveryProvider::RecoveryObjectFromMountPoint ( _bstr_t SessionFolder, _bstr_t RelativePath ) {
+    struct IRecoveryDataStream * _result = 0;
+    HRESULT _hr = raw_RecoveryObjectFromMountPoint(SessionFolder, RelativePath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRecoveryDataStreamPtr(_result, false);
+}
+
+inline IRecoveryDataStreamPtr IRecoveryProvider::RecoveryObjectFromMDF ( _bstr_t SessionFolder, _bstr_t MDFRelativePath, GUID ID, unsigned int Version ) {
+    struct IRecoveryDataStream * _result = 0;
+    HRESULT _hr = raw_RecoveryObjectFromMDF(SessionFolder, MDFRelativePath, ID, Version, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRecoveryDataStreamPtr(_result, false);
+}
+
+inline IRecoveryDataStreamPtr IRecoveryProvider::RecoveryObjectFromEDB ( _bstr_t SessionFolder, _bstr_t EDBRelativePath, _bstr_t EDBObjectID ) {
+    struct IRecoveryDataStream * _result = 0;
+    HRESULT _hr = raw_RecoveryObjectFromEDB(SessionFolder, EDBRelativePath, EDBObjectID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRecoveryDataStreamPtr(_result, false);
+}
+
+inline _variant_t IRecoveryProvider::RestoreEDBGranular2OriginalLocation ( _bstr_t SessionFolder, _bstr_t EDBRelativePath, _bstr_t EDBObjectID, _bstr_t UserName, _bstr_t Password ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_RestoreEDBGranular2OriginalLocation(SessionFolder, EDBRelativePath, EDBObjectID, UserName, Password, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRecoveryProvider::RestoreEDBGranular2DumpPath ( _bstr_t SessionFolder, _bstr_t EDBRelativePath, _bstr_t EDBObjectID, _bstr_t DumpPath ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_RestoreEDBGranular2DumpPath(SessionFolder, EDBRelativePath, EDBObjectID, DumpPath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRecoveryProvider::RestoreEDBGranular2ExchangeServer ( _bstr_t SessionFolder, _bstr_t EDBRelativePath, _bstr_t EDBObjectID, _bstr_t ServerName, _bstr_t UserName, _bstr_t Password ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_RestoreEDBGranular2ExchangeServer(SessionFolder, EDBRelativePath, EDBObjectID, ServerName, UserName, Password, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRecoveryProvider::RestoreAppExchEDB ( _bstr_t SessionFolder, _bstr_t ExchangeWriterName, unsigned long LongNameID, _bstr_t ExGrtRestoreXML ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_RestoreAppExchEDB(SessionFolder, ExchangeWriterName, LongNameID, ExGrtRestoreXML, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline __int64 IRecoveryProvider::MountAndInitAppExchEDB ( _bstr_t SessionFolder, _bstr_t ExchangeWriterName, unsigned long LongNameID ) {
+    __int64 _result = 0;
+    HRESULT _hr = raw_MountAndInitAppExchEDB(SessionFolder, ExchangeWriterName, LongNameID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IRecoveryProvider::DisMountAndUnInitAppExchEDB ( __int64 lHandle ) {
+    HRESULT _hr = raw_DisMountAndUnInitAppExchEDB(lHandle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IRecoveryDataStreamPtr IRecoveryProvider::RestoreAppExchEDBByMountHandle ( __int64 lHandle, unsigned long ulDisMount, _bstr_t IDList, unsigned long * ulStreamSize ) {
+    struct IRecoveryDataStream * _result = 0;
+    HRESULT _hr = raw_RestoreAppExchEDBByMountHandle(lHandle, ulDisMount, IDList, ulStreamSize, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRecoveryDataStreamPtr(_result, false);
+}
+
+inline HRESULT IRecoveryProvider::GetPathInMountPoint ( _bstr_t SessionFolder, _bstr_t RelativePath, BSTR * pstrPathInMountPoint ) {
+    HRESULT _hr = raw_GetPathInMountPoint(SessionFolder, RelativePath, pstrPathInMountPoint);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IRecoveryProvider::ChangeFolderSystemAttribute ( _bstr_t bstrFolderPath, VARIANT_BOOL bSetAttribute ) {
+    HRESULT _hr = raw_ChangeFolderSystemAttribute(bstrFolderPath, bSetAttribute);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IBrowseObjectApplication wrapper method implementations
+//
+
+inline unsigned __int64 IBrowseObjectApplication::GetSize ( ) {
+    unsigned __int64 _result = 0;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBrowseObjectAppExchangeServer wrapper method implementations
+//
+
+inline unsigned long IBrowseObjectAppExchangeServer::GetLongNameID ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_LongNameID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned long IBrowseObjectAppExchangeServer::GetPathID ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_PathID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBrowseObjectAppExchangeEDBMailbox wrapper method implementations
+//
+
+inline long IBrowseObjectAppExchangeEDBMailbox::Getlselfid ( ) {
+    long _result = 0;
+    HRESULT _hr = get_lselfid(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IBrowseObjectAppExchangeEDBMailbox::Gethselfid ( ) {
+    long _result = 0;
+    HRESULT _hr = get_hselfid(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IBrowseObjectAppExchangeEDBMailbox::GetObjectID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ObjectID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline unsigned long IBrowseObjectAppExchangeEDBMailbox::GetObjectFlag ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_ObjectFlag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBrowseObjectAppExchangeEDBMail wrapper method implementations
+//
+
+inline long IBrowseObjectAppExchangeEDBMail::Getlobjsize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_lobjsize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IBrowseObjectAppExchangeEDBMail::Gethobjsize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_hobjsize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IBrowseObjectAppExchangeEDBMail::GetObjectID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ObjectID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IDismountVirtualDisk wrapper method implementations
+//
+
+inline HRESULT IDismountVirtualDisk::DismountVDForChangeD2DView ( ) {
+    HRESULT _hr = raw_DismountVDForChangeD2DView();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ICheckRemotePathAccess wrapper method implementations
+//
+
+inline HRESULT ICheckRemotePathAccess::CheckPathExist ( _bstr_t RemotePath ) {
+    HRESULT _hr = raw_CheckPathExist(RemotePath);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICheckRemotePathAccess::CheckPathAccess ( _bstr_t RemotePath, _bstr_t UserName, _bstr_t Password ) {
+    HRESULT _hr = raw_CheckPathAccess(RemotePath, UserName, Password);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICheckRemotePathAccess::CheckNetPreConnect ( _bstr_t RemotePath, _bstr_t UserName, _bstr_t Password, unsigned long * pVal ) {
+    HRESULT _hr = raw_CheckNetPreConnect(RemotePath, UserName, Password, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICheckRemotePathAccess::GetCurrentConnection ( unsigned long index, BSTR * path, BSTR * user ) {
+    HRESULT _hr = raw_GetCurrentConnection(index, path, user);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICheckRemotePathAccess::DisconnectRemoteSource ( _bstr_t path ) {
+    HRESULT _hr = raw_DisconnectRemoteSource(path);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IEncryptionSessionSupport wrapper method implementations
+//
+
+inline HRESULT IEncryptionSessionSupport::CheckPasswordExist ( _bstr_t SessionFolder ) {
+    HRESULT _hr = raw_CheckPasswordExist(SessionFolder);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IEncryptionSessionSupport::CheckPasswordValid ( _bstr_t SessionFolder, _bstr_t Password ) {
+    HRESULT _hr = raw_CheckPasswordValid(SessionFolder, Password);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

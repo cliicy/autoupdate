@@ -1,0 +1,13 @@
+9.0
+11
+1       SQLCHAR       0       64      ""   1     domainname                 SQL_Latin1_General_CP1_CI_AS
+2       SQLCHAR       0       64      ""   2     primaryname                SQL_Latin1_General_CP1_CI_AS
+3       SQLCHAR       0       64      ""   3     servername                 SQL_Latin1_General_CP1_CI_AS
+4       SQLINT        0       4       ""   4     class                      ""
+5       SQLINT        0       4       ""   5     ostype                     ""
+6       SQLINT        0       4       ""   6     santype                    ""
+7       SQLINT        0       4       ""   7     state                      ""
+8       SQLINT        1       4       ""   8     topologyid                 ""
+9       SQLBINARY     2       16      ""   9     domainguid                 ""
+10      SQLBINARY     2       256     ""   10    admk                       ""
+11      SQLINT        0       4       ""   11    branchid                   ""

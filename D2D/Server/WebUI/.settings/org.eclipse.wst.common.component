@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ARCFlashWebUI">
+        <wb-resource deploy-path="/" source-path="/war"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="FlashServiceContract.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/FlashServiceContract/FlashServiceContract">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="rps-webservice-contract.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/RPSServiceContract/RPSServiceContract">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Common.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Common/Common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/log4j/log4j-1.2.15.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AFJobScript.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AFJobScript/AFJobScript">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mimepull.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/mimepull.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="policy.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/policy.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gmbal-api-only.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/gmbal-api-only.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxws-rt.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/jaxws-rt.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stax2-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/stax2-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stax-ex.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/stax-ex.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="saaj-impl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/saaj-impl.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="streambuffer.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/streambuffer.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-impl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/jaxb-impl.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FastInfoset.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/FastInfoset.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="saaj-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/saaj-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="woodstox-core-asl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/woodstox-core-asl.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.annotation.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/javax.annotation.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr181-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/jsr181-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="management-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/management-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ha-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/jaxws/lib/ha-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gxt-2.3.1-gwt22.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/ExtGWT2.3.1/gxt-2.3.1-gwt22.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gxt.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/ExternalLib/gxt-3.1.4/gxt.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="ARCFlashWebUI"/>
+        <property name="java-output-path" value="/ARCFlashWebUI/war/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>

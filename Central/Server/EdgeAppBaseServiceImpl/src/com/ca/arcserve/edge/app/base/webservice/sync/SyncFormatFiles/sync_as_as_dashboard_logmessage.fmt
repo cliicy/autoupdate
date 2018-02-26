@@ -1,0 +1,9 @@
+9.0
+7
+1       SQLINT        0       4       ""   1     ID                   ""
+2       SQLINT        0       4       ""   2     UserID               ""
+3       SQLINT        1       4       ""   3     Level                ""
+4       SQLNCHAR      2       510     ""   4     Source               SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME   1       8       ""   5     Time                 ""
+6       SQLNCHAR      4       0       ""   6     Message              SQL_Latin1_General_CP1_CI_AS
+7       SQLINT        0       4       ""   7     branchid             ""

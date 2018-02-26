@@ -1,0 +1,31 @@
+9.0
+29
+1       SQLINT        0       4       ""   1     ID                                     ""
+2       SQLINT        0       4       ""   2     NodeID                                 ""
+3       SQLNCHAR      2       1024    ""   3     Caption                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR      2       1024    ""   4     Description                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR      2       256     ""   5     DeviceID                               SQL_Latin1_General_CP1_CI_AS
+6       SQLBIGINT     0       8       ""   6     DiskUsedSpace                          ""
+7       SQLINT        0       4       ""   7     DiskThroughput                         ""
+8       SQLNCHAR      2       128     ""   8     InterfaceType                          SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR      2       1024    ""   9     Manufacturer                           SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR      2       256     ""   10    MediaType                              SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR      2       1024    ""   11    Model                                  SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR      2       512     ""   12    Name                                   SQL_Latin1_General_CP1_CI_AS
+13      SQLSMALLINT   0       2       ""   13    Partitions                             ""
+14      SQLBIGINT     0       8       ""   14    Size                                   ""
+15      SQLBIGINT     0       8       ""   15    TotalCylinders                         ""
+16      SQLBIGINT     0       8       ""   16    TotalHeads                             ""
+17      SQLBIGINT     0       8       ""   17    TotalSectors                           ""
+18      SQLBIGINT     0       8       ""   18    TotalTracks                            ""
+19      SQLBIGINT     0       8       ""   19    TracksPerCylinder                      ""
+20      SQLINT        0       4       ""   20    SCSIBus                                ""
+21      SQLINT        0       4       ""   21    SCSILogicalUnit                        ""
+22      SQLINT        0       4       ""   22    SCSIPort                               ""
+23      SQLINT        0       4       ""   23    SCSITargetId                           ""
+24      SQLNCHAR      2       1024    ""   24    Signature                              SQL_Latin1_General_CP1_CI_AS
+25      SQLINT        0       4       ""   25    Index                                  ""
+26      SQLINT        0       4       ""   26    DiskType                               ""
+27      SQLNCHAR      2       4096    ""   27    RawData                                SQL_Latin1_General_CP1_CI_AS
+28      SQLDATETIME   0       8       ""   28    LastUpdate                             ""
+29      SQLINT        0       4       ""   29    branchid                               ""

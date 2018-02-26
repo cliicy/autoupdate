@@ -1,0 +1,15 @@
+9.0
+13
+1       SQLCHAR       0       16      ""   1     pool                           SQL_Latin1_General_CP1_CI_AS
+2       SQLCHAR       0       32      ""   2     basenum                        SQL_Latin1_General_CP1_CI_AS
+3       SQLCHAR       0       32      ""   3     nextnum                        SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR       0       32      ""   4     range                          SQL_Latin1_General_CP1_CI_AS
+5       SQLINT        0       4       ""   5     minsaveset                     ""
+6       SQLINT        0       4       ""   6     retention                      ""
+7       SQLCHAR       0       12      ""   7     setname                        SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME   0       8       ""   8     activateddate                  ""
+9       SQLCHAR       2       64      ""   9     hostname                       SQL_Latin1_General_CP1_CI_AS
+10      SQLSMALLINT   1       2       ""   10    increment                      ""
+11      SQLSMALLINT   0       2       ""   11    reserved                       ""
+12      SQLCHAR       2       16      ""   12    reserved1                      SQL_Latin1_General_CP1_CI_AS
+13      SQLINT        0       4       ""   13    branchid                       ""

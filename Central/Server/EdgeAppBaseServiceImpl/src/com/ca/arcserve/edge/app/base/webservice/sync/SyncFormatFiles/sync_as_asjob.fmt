@@ -1,0 +1,25 @@
+9.0
+23
+1       SQLINT        0       4       ""   1     id                                       ""
+2       SQLINT        1       4       ""   2     no                                       ""
+3       SQLSMALLINT   1       2       ""   3     type                                     ""
+4       SQLSMALLINT   1       2       ""   4     status                                   ""
+5       SQLDATETIME   1       8       ""   5     starttime                                ""
+6       SQLDATETIME   1       8       ""   6     endtime                                  ""
+7       SQLCHAR       2       32      ""   7     owner                                    SQL_Latin1_General_CP1_CI_AS
+8       SQLCHAR       2       96      ""   8     comment                                  SQL_Latin1_General_CP1_CI_AS
+9       SQLCHAR       2       64      ""   9     jhostname                                SQL_Latin1_General_CP1_CI_AS
+10      SQLCHAR       2       12      ""   10    jsetname                                 SQL_Latin1_General_CP1_CI_AS
+11      SQLCHAR       2       16      ""   11    jreserved                                SQL_Latin1_General_CP1_CI_AS
+12      SQLINT        1       4       ""   12    ThroughputMBPerMin                       ""
+13      SQLTINYINT    1       1       ""   13    makeupJobStatus                          ""
+14      SQLTINYINT    1       1       ""   14    isMakeupJobConfig                        ""
+15      SQLSMALLINT   1       2       ""   15    jobexectype                              ""
+16      SQLTINYINT    1       1       ""   16    compression                              ""
+17      SQLTINYINT    1       1       ""   17    encryption                               ""
+18      SQLTINYINT    1       1       ""   18    verifyAfterbackup                        ""
+19      SQLTINYINT    1       1       ""   19    alertConfig                              ""
+20      SQLTINYINT    1       1       ""   20    prepost                                  ""
+21      SQLTINYINT    1       1       ""   21    virusScan                                ""
+22      SQLTINYINT    1       1       ""   22    filter                                   ""
+23      SQLINT        0       4       ""   23    branchid                                 ""

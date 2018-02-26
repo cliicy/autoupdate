@@ -1,0 +1,19 @@
+9.0
+17
+1       SQLINT        0       4       ""   1     ID                                   ""
+2       SQLINT        0       4       ""   2     NodeID                               ""
+3       SQLBIGINT     0       8       ""   3     BlockSize                            ""
+4       SQLNCHAR      2       100     ""   4     Caption                              SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR      2       100     ""   5     Name                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLBIGINT     0       8       ""   6     Capacity                             ""
+7       SQLBIT        1       1       ""   7     Compressed                           ""
+8       SQLNCHAR      2       100     ""   8     DriveLetter                          SQL_Latin1_General_CP1_CI_AS
+9       SQLINT        0       4       ""   9     DriveType                            ""
+10      SQLNCHAR      2       100     ""   10    FileSystem                           SQL_Latin1_General_CP1_CI_AS
+11      SQLBIGINT     0       8       ""   11    FreeSpace                            ""
+12      SQLNCHAR      2       1024    ""   12    DeviceID                             SQL_Latin1_General_CP1_CI_AS
+13      SQLINT        0       4       ""   13    FreeSpacePercent                     ""
+14      SQLINT        0       4       ""   14    VolumeType                           ""
+15      SQLNCHAR      2       4096    ""   15    RawData                              SQL_Latin1_General_CP1_CI_AS
+16      SQLDATETIME   0       8       ""   16    LastUpdate                           ""
+17      SQLINT        0       4       ""   17    branchid                             ""

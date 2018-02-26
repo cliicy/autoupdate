@@ -1,0 +1,16 @@
+9.0
+14
+1       SQLINT        0       4       ""   1     id                           ""
+2       SQLNCHAR      2       128     ""   2     rhostName                    SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       510     ""   3     nodeName                     SQL_Latin1_General_CP1_CI_AS
+4       SQLINT        0       4       ""   4     categoryID                   ""
+5       SQLNCHAR      2       256     ""   5     displayName                  SQL_Latin1_General_CP1_CI_AS
+6       SQLINT        0       4       ""   6     majorVersion                 ""
+7       SQLINT        0       4       ""   7     minorVersion                 ""
+8       SQLNCHAR      2       64      ""   8     version                      SQL_Latin1_General_CP1_CI_AS
+9       SQLDATETIME   0       8       ""   9     installDate                  ""
+10      SQLINT        0       4       ""   10    language                     ""
+11      SQLINT        0       4       ""   11    spLvl                        ""
+12      SQLNCHAR      2       128     ""   12    edition                      SQL_Latin1_General_CP1_CI_AS
+13      SQLDATETIME   0       8       ""   13    updateTime                   ""
+14      SQLINT        0       4       ""   14    branchid                     ""

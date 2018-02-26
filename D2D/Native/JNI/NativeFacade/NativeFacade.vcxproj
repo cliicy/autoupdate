@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D260624-4D58-49F0-880C-16EB5F44DFBE}</ProjectGuid>
+    <RootNamespace>NativeFacade</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='amd64 Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='amd64 Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='x86 Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='amd64 Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='x86 Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='x86 Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\x86.rel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\x86.rel\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\amd64.rel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\amd64.rel\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\Common;..\..\H\Virtualization;..\..\H;..\..\H\d2dcallback;.\d2dproxy;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common_def\windows;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common1\thl;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common1\trc;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common1\utl;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common2\message_store;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common2\net_utl;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common2\sys_info;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common2\win32_base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NATIVEFACADE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Netapi32.lib;afcorefunction.lib;AFCoreInterface.lib;Catalog.lib;DbgLog.lib;log.lib;HypervMgr.lib;Iphlpapi.lib;HaCommonFunc.lib;HaVHDUtility.lib;DRCore.lib;HaUtility.lib;Drcomlib.lib;dbglog.lib;VhdxParserLib.lib;ClusApi.lib;HyperVBackupInteractLib.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\LIB\X86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\Common;..\..\H\Virtualization;..\..\H;..\..\H\d2dcallback;.\d2dproxy;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common_def\windows;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common1\thl;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common1\trc;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common1\utl;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common2\message_store;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common2\net_utl;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common2\sys_info;.\RemoteVCM-RHA\TestP2VLib\TestP2VLib\common2\win32_base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NATIVEFACADE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Netapi32.lib;AFCoreInterface.lib;Catalog.lib;log.lib;DbgLog.lib;Dbghelp.lib;HypervMgr.lib;HaCommonFunc.lib;HaVHDUtility.lib;DRCore.lib;HaUtility.lib;Drcomlib.lib;dbglog.lib;AFCoreFunction.lib;Iphlpapi.lib;VhdxParserLib.lib;HyperVBackupInteractLib.lib;ClusApi.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\LIB\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\FileCopyCommonJNI.cpp" />
+    <ClCompile Include="AFCoreAPIInterface.cpp" />
+    <ClCompile Include="AppADBrowse.cpp" />
+    <ClCompile Include="Catalog.cpp" />
+    <ClCompile Include="CopyFileTree.cpp" />
+    <ClCompile Include="d2dproxy\ClusterMonitor.cpp" />
+    <ClCompile Include="d2dproxy\TaskLicense.cpp" />
+    <ClCompile Include="d2dproxy\WMIService.cpp" />
+    <ClCompile Include="FacadeVMWareMgr.cpp" />
+    <ClCompile Include="GRTMntManager.cpp" />
+    <ClCompile Include="HAClientWrapper.cpp" />
+    <ClCompile Include="HyperVRepCallBack.cpp" />
+    <ClCompile Include="JNIConv.cpp" />
+    <ClCompile Include="ManualConversion.cpp" />
+    <ClCompile Include="MyCrypto\CNGAPIWrapper.cpp" />
+    <ClCompile Include="MyCrypto\CryptoCAPIWrapperImp.cpp" />
+    <ClCompile Include="MyCrypto\CryptoCNGWrapperImp.cpp" />
+    <ClCompile Include="MyCrypto\CryptoCommon.cpp" />
+    <ClCompile Include="MyCrypto\CryptoWrapFactory.cpp" />
+    <ClCompile Include="MyCrypto\CXMLFileMgr.cpp" />
+    <ClCompile Include="MyCrypto\EncryptPassword.cpp" />
+    <ClCompile Include="MyCrypto\EncryptString.cpp" />
+    <ClCompile Include="MyUpdateDNSTool\DebugLog-UpdateDNSTool.cpp" />
+    <ClCompile Include="MyUpdateDNSTool\UpdateDNSTool.cpp" />
+    <ClCompile Include="Native_ASAG_CRC.cpp" />
+    <ClCompile Include="NativeFacade.cpp" />
+    <ClCompile Include="NativeFacadeForHyperV.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='amd64 Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='amd64 Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='amd64 Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='x86 Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='x86 Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='x86 Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UserImpersonateHelper.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="VMwareCallback.cpp" />
+    <ClCompile Include="d2dproxy\D2DIPCItem.cpp" />
+    <ClCompile Include="d2dproxy\D2DProxyImpl.cpp" />
+    <ClCompile Include="..\..\h\d2dcallback\Basecodec.cpp" />
+    <ClCompile Include="IniDefine.cpp" />
+    <ClCompile Include="rvcm_save_network_mapping_to_file.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\H\d2dcallback\chklicFuncSignature.h" />
+    <ClInclude Include="com_ca_arcflash_webservice_jni_WSJNI.h" />
+    <ClInclude Include="com_ca_ha_webservice_jni_HyperVJNI.h" />
+    <ClInclude Include="com_ca_ha_webservice_jni_VMWareJNI.h" />
+    <ClInclude Include="CopyFileTree.h" />
+    <ClInclude Include="d2dproxy\ClusterMonitor.h" />
+    <ClInclude Include="d2dproxy\TaskLicense.h" />
+    <ClInclude Include="d2dproxy\WMIService.h" />
+    <ClInclude Include="FacadeVMWareMgr.h" />
+    <ClInclude Include="GRTMntManager.h" />
+    <ClInclude Include="HAClientWrapper.h" />
+    <ClInclude Include="HyperVRepCallBack.h" />
+    <ClInclude Include="JNIConv.h" />
+    <ClInclude Include="MyCrypto\CNGAPIWrapper.h" />
+    <ClInclude Include="MyCrypto\CryptoCAPIWrapperImp.h" />
+    <ClInclude Include="MyCrypto\CryptoCNGWrapperImp.h" />
+    <ClInclude Include="MyCrypto\CryptoCommon.h" />
+    <ClInclude Include="MyCrypto\CryptoDefine.h" />
+    <ClInclude Include="MyCrypto\CryptoSynchUtility.h" />
+    <ClInclude Include="MyCrypto\CXMLFileMgr.h" />
+    <ClInclude Include="MyCrypto\D2DCryptoError.h" />
+    <ClInclude Include="MyCrypto\D2DErrorCode.h" />
+    <ClInclude Include="MyCrypto\EncryptPassword.h" />
+    <ClInclude Include="MyCrypto\EncryptString.h" />
+    <ClInclude Include="MyCrypto\ICryptoWrapperInterface.h" />
+    <ClInclude Include="MyUpdateDNSTool\DebugLog-UpdateDNSTool.h" />
+    <ClInclude Include="MyUpdateDNSTool\UpdateDNSTool.h" />
+    <ClInclude Include="Native_ASAG_CRC.h" />
+    <ClInclude Include="NativeFacade.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="UserImpersonateHelper.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="VMwareCallback.h" />
+    <ClInclude Include="d2dproxy\D2DIPCItem.h" />
+    <ClInclude Include="d2dproxy\D2DProxyImpl.h" />
+    <ClInclude Include="d2dproxy\id2dproxydef.h" />
+    <ClInclude Include="d2dproxy\iunknown.h" />
+    <ClInclude Include="d2dproxy\pxypublic.h" />
+    <ClInclude Include="..\..\h\d2dcallback\Basecodec.h" />
+    <ClInclude Include="..\..\h\d2dcallback\d2dproxyiDef.h" />
+    <ClInclude Include="..\..\h\d2dcallback\SigForD2Dcallback.h" />
+    <ClInclude Include="IniDefine.h" />
+    <ClInclude Include="rvcm_save_network_mapping_to_file.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NativeFacade.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\H</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\H</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

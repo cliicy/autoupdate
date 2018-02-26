@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 1.6.4//EN" "http://google-web-toolkit.googlecode.com/svn/tags/1.6.4/distro-source/core/src/gwt-module.dtd">
+<module rename-to='contents'>
+  <inherits name='com.extjs.gxt.ui.GXT' />
+  <inherits name='com.sencha.gxt.ui.GXT' />
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name="com.google.gwt.i18n.I18N"/>
+  <inherits name='com.extjs.gxt.charts.Chart' />
+  <inherits name='com.google.gwt.user.theme.standard.StandardResources' />
+  <inherits name="com.ca.arcflash.jobscript.AFJobScript"/>
+  <inherits name='com.ca.arcflash.ha.HAMonitorServiceContract'/>
+  <inherits name="com.google.gwt.user.Debug"/>
+  <inherits name="com.ca.arcflash.webservice.data.D2DApmForEdgeContract" />
+  <inherits name="com.ca.arcflash.webservice.FlashJobMonitorContract"/>
+  <inherits name="com.sencha.gxt.theme.gray.Gray" />
+  
+  <entry-point class='com.ca.arcflash.ui.client.ARCFlashWebUI'/>
+  <!--  comment on the locales to save compile time  -->
+  <extend-property name="locale" values="en"/>
+  <extend-property name="locale" values="de_DE"/>
+  <extend-property name="locale" values="fr_FR"/>
+  <extend-property name="locale" values="ja_JP"/>
+  <extend-property name="locale" values="pt_BR"/>
+  <extend-property name="locale" values="es_ES"/>
+  <extend-property name="locale" values="it_IT"/>
+  <extend-property name="locale" values="zh_CN"/>
+  <extend-property name="locale" values="zh_TW"/>
+
+  	<!-- uncomment it to save time-->
+	<!--<set-property name="gxt.user.agent" value="ie8" />-->
+  	<!-- build check will replace it so that it will build for IE8 only -->
+	<!--FAST_BUILD_CHECK-->
+</module>

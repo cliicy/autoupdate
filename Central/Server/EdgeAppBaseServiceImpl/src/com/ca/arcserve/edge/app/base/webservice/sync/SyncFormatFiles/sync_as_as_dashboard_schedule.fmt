@@ -1,0 +1,18 @@
+9.0
+16
+1       SQLINT        0       4       ""   1     ID                               ""
+2       SQLNCHAR      2       510     ""   2     Name                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       2048    ""   3     Description                      SQL_Latin1_General_CP1_CI_AS
+4       SQLINT        1       4       ""   4     ActionType                       ""
+5       SQLINT        1       4       ""   5     ScheduleType                     ""
+6       SQLNCHAR      2       2048    ""   6     ScheduleParam                    SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME   1       8       ""   7     ActionTime                       ""
+8       SQLDATETIME   1       8       ""   8     RepeatFrom                       ""
+9       SQLINT        1       4       ""   9     RepeatType                       ""
+10      SQLNCHAR      2       2048    ""   10    RepeatParam                      SQL_Latin1_General_CP1_CI_AS
+11      SQLDATETIME   1       8       ""   11    LastActionTime                   ""
+12      SQLINT        1       4       ""   12    ActedTimes                       ""
+13      SQLINT        0       4       ""   13    UserID                           ""
+14      SQLDATETIME   1       8       ""   14    CreatedAt                        ""
+15      SQLDATETIME   1       8       ""   15    LastModifiedAt                   ""
+16      SQLINT        0       4       ""   16    branchid                         ""

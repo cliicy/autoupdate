@@ -1,0 +1,5 @@
+9.0
+3
+1       SQLINT        0       4       ""   1     id                   ""
+2       SQLCHAR       2       512     ""   2     path                 SQL_Latin1_General_CP1_CI_AS
+3       SQLINT        0       4       ""   3     branchid             ""

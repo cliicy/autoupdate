@@ -1,0 +1,99 @@
+
+			      Sencha Theme Builder
+
+
+What is it?
+-----------
+
+The Sencha GXT 3.1 Theme Builder is a tool designed to take a set of theme
+properties and output a JAR file with the necessary GWT module, classes, css,
+and images to give your app that look and feel. For more information, please
+check out concepts/GeneratedThemes.html in your local documentation.
+
+The generated theme will be usable in two modes: CSS3 and Image. The Image mode
+is a fallback for browsers not capable of CSS3, and is of course able to work in
+modern browsers as well. The CSS3 mode will likely generate smaller compiled
+output, and will use the browser's CSS engine to create effects rather than
+relying on images.
+
+
+Using the tool
+-------------- 
+
+For OS X and Windows, the GXT download zip includes the required version of
+PhantomJS, as well as a script correctly referencing this PhantomJS version and
+running the themer tool.
+
+On Windows, you can run
+
+   > themebuilder\bin\themer.bat
+
+On OS X, you can run
+
+   $ themebuilder/bin/themer.sh
+
+Either way should result in the following message, informing you how to use the
+tool:
+
+  usage: ThemeBuilder [options] [config ...]
+   -gen <path>                    directory to generate code to
+   -generateConfig <outputFile>   Generate sample configuration
+   -h,--help                      print this message
+   -imageFile <path>              captured image used for slicing images
+   -manifestFile <manifestFile>   json manifest file of the captured image
+   -out <jar>                     path to jar file to generate.  Default is
+                                  a jar named <theme.name>.jar in the
+                                  current directory
+   -warDir <warDir>               directory to compile the css3-based theme
+                                  to before images are sliced from it
+
+All parameters are optional, except for config files - at least one config file
+must be provided. The other options are useful to monitor the process of
+generating the theme, or getting the results of the theme before they are made
+into a jar, perhaps to make additional modifications before creating the jar, or
+adding them directly to a project as source. Please note that the resulting
+output jar will be overwritten each time the command is run.  To prevent this,
+set the output manually using the -out parameter.
+
+This tool depends on a PhantomJS installation in order to correctly generate
+images - the GXT download zip contains an up-to-date copy fo PhantomJS for both
+OS X and Windows. Additional versions are available for download at
+http://phantomjs.org/download.html. The provided shell scripts include a flag
+passed to the JVM to inform it where PhantomJS can be found - if running from
+the command line, you can pass this in as a system property named phantomBin:
+
+   $ java -DphantomBin=path/to/phantomJs \
+   -jar gxt-themebuilder.jar [options] [config...]
+
+
+
+Examples
+--------
+
+The release provides a couple of preset theme configurations that enable you to
+get started quickly with minimal or no changes, as well as an example with just
+the bare-bones properties that are required to use the themer. Within a config
+file, other previously declared variables may be referenced. There are a variety
+of built-in functions that you can use to modify colors and gradients, and some
+simple math is allowed as well.
+
+For more information on the configuration options, please review the file
+examples/skeleton-config/skeleton-config.theme
+
+This file contains detailed information for each configuration option as well as
+a sample value to demonstrate the expected format for each property.
+
+
+After Generation
+----------------
+
+Once the theme is generated and the jar is produced (typically <theme.name>.jar
+or what is defined in the -out command line parameter), it's as simple as
+dropping the jar into your project and adding one line to your main .gwt.xml
+file, replacing <theme.basePackage> with the value in the configuration file:
+
+   <inherits name="[theme.basePackage].Theme" />
+
+For convenience, this above line will be the output when the command finishes.
+That line can be copied into your project as is to integrate the newly generated
+theme.

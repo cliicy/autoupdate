@@ -1,0 +1,11 @@
+9.0
+9
+1       SQLINT        0       4       ""   1     id                       ""
+2       SQLNCHAR      2       128     ""   2     rhostname                SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR      2       510     ""   3     nodename                 SQL_Latin1_General_CP1_CI_AS
+4       SQLSMALLINT   0       2       ""   4     diskindex                ""
+5       SQLBIGINT     0       8       ""   5     throughput               ""
+6       SQLSMALLINT   0       2       ""   6     datetype                 ""
+7       SQLDATETIME   0       8       ""   7     updatedate               ""
+8       SQLINT        0       4       ""   8     timepoint                ""
+9       SQLINT        0       4       ""   9     branchid                 ""

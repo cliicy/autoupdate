@@ -1,0 +1,10 @@
+9.0
+8
+1       SQLINT        0       4       ""   1     deviceid                     ""
+2       SQLCHAR       2       64      ""   2     tdhostname                   SQL_Latin1_General_CP1_CI_AS
+3       SQLSMALLINT   1       2       ""   3     adapterid                    ""
+4       SQLSMALLINT   1       2       ""   4     adapterbusid                 ""
+5       SQLSMALLINT   1       2       ""   5     scsiid                       ""
+6       SQLSMALLINT   1       2       ""   6     lun                          ""
+7       SQLINT        1       4       ""   7     devicestatus                 ""
+8       SQLINT        0       4       ""   8     branchid                     ""
